@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3110B9AE1C1970DD009F6FF2 /* LDZAVPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110B9AD1C1970DD009F6FF2 /* LDZAVPlayerHelper.m */; };
+		311D83DA1C043ACB00E3677D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D83D91C043ACB00E3677D /* main.m */; };
+		311D83DD1C043ACB00E3677D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D83DC1C043ACB00E3677D /* AppDelegate.m */; };
+		311D83E01C043ACB00E3677D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D83DF1C043ACB00E3677D /* ViewController.m */; };
+		311D83E31C043ACB00E3677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311D83E11C043ACB00E3677D /* Main.storyboard */; };
+		311D83E51C043ACB00E3677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311D83E41C043ACB00E3677D /* Assets.xcassets */; };
+		311D83E81C043ACB00E3677D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311D83E61C043ACB00E3677D /* LaunchScreen.storyboard */; };
+		311D83F31C043ACB00E3677D /* LDZMoviewPlayer_XibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D83F21C043ACB00E3677D /* LDZMoviewPlayer_XibTests.m */; };
+		311D83FE1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D83FD1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.m */; };
+		311D840E1C043B4400E3677D /* LDZMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311D840C1C043B4400E3677D /* LDZMoviePlayerController.m */; };
+		311D840F1C043B4400E3677D /* LDZMoviePlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311D840D1C043B4400E3677D /* LDZMoviePlayerController.xib */; };
+		31BD45ED1C1AA2CF00EB0114 /* slider-metal-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BD45EC1C1AA2CF00EB0114 /* slider-metal-handle.png */; };
+		31EB1CA61C055EEC00DB315C /* 5540385469401b10912f7a24-6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9A1C055EEC00DB315C /* 5540385469401b10912f7a24-6.mp4 */; };
+		31EB1CA71C055EEC00DB315C /* 分享_plyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9B1C055EEC00DB315C /* 分享_plyer.png */; };
+		31EB1CA81C055EEC00DB315C /* 分享_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9C1C055EEC00DB315C /* 分享_选中.png */; };
+		31EB1CA91C055EEC00DB315C /* 播放器_播放.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9D1C055EEC00DB315C /* 播放器_播放.png */; };
+		31EB1CAA1C055EEC00DB315C /* 播放器_暂停.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9E1C055EEC00DB315C /* 播放器_暂停.png */; };
+		31EB1CAB1C055EEC00DB315C /* 播放器_返回.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1C9F1C055EEC00DB315C /* 播放器_返回.png */; };
+		31EB1CAC1C055EEC00DB315C /* 播放器_静音.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA01C055EEC00DB315C /* 播放器_静音.png */; };
+		31EB1CAD1C055EEC00DB315C /* 播放器_音量.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA11C055EEC00DB315C /* 播放器_音量.png */; };
+		31EB1CAE1C055EEC00DB315C /* 收藏_plyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA21C055EEC00DB315C /* 收藏_plyer.png */; };
+		31EB1CAF1C055EEC00DB315C /* 收藏_选中_plyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA31C055EEC00DB315C /* 收藏_选中_plyer.png */; };
+		31EB1CB01C055EEC00DB315C /* 缓存_plyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA41C055EEC00DB315C /* 缓存_plyer.png */; };
+		31EB1CB11C055EEC00DB315C /* 缓存_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CA51C055EEC00DB315C /* 缓存_选中.png */; };
+		31EB1CD61C0595DA00DB315C /* media_Player_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CD31C0595DA00DB315C /* media_Player_left@3x.png */; };
+		31EB1CD71C0595DA00DB315C /* media_Player_progress_bar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CD41C0595DA00DB315C /* media_Player_progress_bar@3x.png */; };
+		31EB1CD81C0595DA00DB315C /* media_Player_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31EB1CD51C0595DA00DB315C /* media_Player_right@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311D83EF1C043ACB00E3677D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311D83CD1C043ACB00E3677D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311D83D41C043ACB00E3677D;
+			remoteInfo = LDZMoviewPlayer_Xib;
+		};
+		311D83FA1C043ACB00E3677D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311D83CD1C043ACB00E3677D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311D83D41C043ACB00E3677D;
+			remoteInfo = LDZMoviewPlayer_Xib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3110B9AC1C1970DD009F6FF2 /* LDZAVPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDZAVPlayerHelper.h; sourceTree = "<group>"; };
+		3110B9AD1C1970DD009F6FF2 /* LDZAVPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDZAVPlayerHelper.m; sourceTree = "<group>"; };
+		311D83D51C043ACB00E3677D /* LDZMoviewPlayer_Xib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDZMoviewPlayer_Xib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311D83D91C043ACB00E3677D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		311D83DB1C043ACB00E3677D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		311D83DC1C043ACB00E3677D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		311D83DE1C043ACB00E3677D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		311D83DF1C043ACB00E3677D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		311D83E21C043ACB00E3677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		311D83E41C043ACB00E3677D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311D83E71C043ACB00E3677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		311D83E91C043ACB00E3677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311D83EE1C043ACB00E3677D /* LDZMoviewPlayer_XibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDZMoviewPlayer_XibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311D83F21C043ACB00E3677D /* LDZMoviewPlayer_XibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDZMoviewPlayer_XibTests.m; sourceTree = "<group>"; };
+		311D83F41C043ACB00E3677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311D83F91C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDZMoviewPlayer_XibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311D83FD1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDZMoviewPlayer_XibUITests.m; sourceTree = "<group>"; };
+		311D83FF1C043ACB00E3677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311D840B1C043B4400E3677D /* LDZMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDZMoviePlayerController.h; sourceTree = "<group>"; };
+		311D840C1C043B4400E3677D /* LDZMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDZMoviePlayerController.m; sourceTree = "<group>"; };
+		311D840D1C043B4400E3677D /* LDZMoviePlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDZMoviePlayerController.xib; sourceTree = "<group>"; };
+		31BD45EC1C1AA2CF00EB0114 /* slider-metal-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-handle.png"; sourceTree = "<group>"; };
+		31EB1C9A1C055EEC00DB315C /* 5540385469401b10912f7a24-6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5540385469401b10912f7a24-6.mp4"; sourceTree = "<group>"; };
+		31EB1C9B1C055EEC00DB315C /* 分享_plyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享_plyer.png"; sourceTree = "<group>"; };
+		31EB1C9C1C055EEC00DB315C /* 分享_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分享_选中.png"; sourceTree = "<group>"; };
+		31EB1C9D1C055EEC00DB315C /* 播放器_播放.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器_播放.png"; sourceTree = "<group>"; };
+		31EB1C9E1C055EEC00DB315C /* 播放器_暂停.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器_暂停.png"; sourceTree = "<group>"; };
+		31EB1C9F1C055EEC00DB315C /* 播放器_返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器_返回.png"; sourceTree = "<group>"; };
+		31EB1CA01C055EEC00DB315C /* 播放器_静音.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器_静音.png"; sourceTree = "<group>"; };
+		31EB1CA11C055EEC00DB315C /* 播放器_音量.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器_音量.png"; sourceTree = "<group>"; };
+		31EB1CA21C055EEC00DB315C /* 收藏_plyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏_plyer.png"; sourceTree = "<group>"; };
+		31EB1CA31C055EEC00DB315C /* 收藏_选中_plyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏_选中_plyer.png"; sourceTree = "<group>"; };
+		31EB1CA41C055EEC00DB315C /* 缓存_plyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缓存_plyer.png"; sourceTree = "<group>"; };
+		31EB1CA51C055EEC00DB315C /* 缓存_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缓存_选中.png"; sourceTree = "<group>"; };
+		31EB1CD31C0595DA00DB315C /* media_Player_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "media_Player_left@3x.png"; sourceTree = "<group>"; };
+		31EB1CD41C0595DA00DB315C /* media_Player_progress_bar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "media_Player_progress_bar@3x.png"; sourceTree = "<group>"; };
+		31EB1CD51C0595DA00DB315C /* media_Player_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "media_Player_right@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311D83D21C043ACB00E3677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83EB1C043ACB00E3677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83F61C043ACB00E3677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311D83CC1C043ACB00E3677D = {
+			isa = PBXGroup;
+			children = (
+				311D83D71C043ACB00E3677D /* LDZMoviewPlayer_Xib */,
+				311D83F11C043ACB00E3677D /* LDZMoviewPlayer_XibTests */,
+				311D83FC1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests */,
+				311D83D61C043ACB00E3677D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311D83D61C043ACB00E3677D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311D83D51C043ACB00E3677D /* LDZMoviewPlayer_Xib.app */,
+				311D83EE1C043ACB00E3677D /* LDZMoviewPlayer_XibTests.xctest */,
+				311D83F91C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311D83D71C043ACB00E3677D /* LDZMoviewPlayer_Xib */ = {
+			isa = PBXGroup;
+			children = (
+				31EB1C991C055EEC00DB315C /* Resources */,
+				311D83DB1C043ACB00E3677D /* AppDelegate.h */,
+				311D83DC1C043ACB00E3677D /* AppDelegate.m */,
+				311D83DE1C043ACB00E3677D /* ViewController.h */,
+				311D83DF1C043ACB00E3677D /* ViewController.m */,
+				311D840B1C043B4400E3677D /* LDZMoviePlayerController.h */,
+				311D840C1C043B4400E3677D /* LDZMoviePlayerController.m */,
+				311D840D1C043B4400E3677D /* LDZMoviePlayerController.xib */,
+				3110B9AC1C1970DD009F6FF2 /* LDZAVPlayerHelper.h */,
+				3110B9AD1C1970DD009F6FF2 /* LDZAVPlayerHelper.m */,
+				311D83E11C043ACB00E3677D /* Main.storyboard */,
+				311D83E41C043ACB00E3677D /* Assets.xcassets */,
+				311D83E61C043ACB00E3677D /* LaunchScreen.storyboard */,
+				311D83E91C043ACB00E3677D /* Info.plist */,
+				311D83D81C043ACB00E3677D /* Supporting Files */,
+			);
+			path = LDZMoviewPlayer_Xib;
+			sourceTree = "<group>";
+		};
+		311D83D81C043ACB00E3677D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311D83D91C043ACB00E3677D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		311D83F11C043ACB00E3677D /* LDZMoviewPlayer_XibTests */ = {
+			isa = PBXGroup;
+			children = (
+				311D83F21C043ACB00E3677D /* LDZMoviewPlayer_XibTests.m */,
+				311D83F41C043ACB00E3677D /* Info.plist */,
+			);
+			path = LDZMoviewPlayer_XibTests;
+			sourceTree = "<group>";
+		};
+		311D83FC1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				311D83FD1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.m */,
+				311D83FF1C043ACB00E3677D /* Info.plist */,
+			);
+			path = LDZMoviewPlayer_XibUITests;
+			sourceTree = "<group>";
+		};
+		31EB1C991C055EEC00DB315C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31BD45EC1C1AA2CF00EB0114 /* slider-metal-handle.png */,
+				31EB1CD31C0595DA00DB315C /* media_Player_left@3x.png */,
+				31EB1CD41C0595DA00DB315C /* media_Player_progress_bar@3x.png */,
+				31EB1CD51C0595DA00DB315C /* media_Player_right@3x.png */,
+				31EB1C9A1C055EEC00DB315C /* 5540385469401b10912f7a24-6.mp4 */,
+				31EB1C9B1C055EEC00DB315C /* 分享_plyer.png */,
+				31EB1C9C1C055EEC00DB315C /* 分享_选中.png */,
+				31EB1C9D1C055EEC00DB315C /* 播放器_播放.png */,
+				31EB1C9E1C055EEC00DB315C /* 播放器_暂停.png */,
+				31EB1C9F1C055EEC00DB315C /* 播放器_返回.png */,
+				31EB1CA01C055EEC00DB315C /* 播放器_静音.png */,
+				31EB1CA11C055EEC00DB315C /* 播放器_音量.png */,
+				31EB1CA21C055EEC00DB315C /* 收藏_plyer.png */,
+				31EB1CA31C055EEC00DB315C /* 收藏_选中_plyer.png */,
+				31EB1CA41C055EEC00DB315C /* 缓存_plyer.png */,
+				31EB1CA51C055EEC00DB315C /* 缓存_选中.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311D83D41C043ACB00E3677D /* LDZMoviewPlayer_Xib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311D84021C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_Xib" */;
+			buildPhases = (
+				311D83D11C043ACB00E3677D /* Sources */,
+				311D83D21C043ACB00E3677D /* Frameworks */,
+				311D83D31C043ACB00E3677D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LDZMoviewPlayer_Xib;
+			productName = LDZMoviewPlayer_Xib;
+			productReference = 311D83D51C043ACB00E3677D /* LDZMoviewPlayer_Xib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		311D83ED1C043ACB00E3677D /* LDZMoviewPlayer_XibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311D84051C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_XibTests" */;
+			buildPhases = (
+				311D83EA1C043ACB00E3677D /* Sources */,
+				311D83EB1C043ACB00E3677D /* Frameworks */,
+				311D83EC1C043ACB00E3677D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311D83F01C043ACB00E3677D /* PBXTargetDependency */,
+			);
+			name = LDZMoviewPlayer_XibTests;
+			productName = LDZMoviewPlayer_XibTests;
+			productReference = 311D83EE1C043ACB00E3677D /* LDZMoviewPlayer_XibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		311D83F81C043ACB00E3677D /* LDZMoviewPlayer_XibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311D84081C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_XibUITests" */;
+			buildPhases = (
+				311D83F51C043ACB00E3677D /* Sources */,
+				311D83F61C043ACB00E3677D /* Frameworks */,
+				311D83F71C043ACB00E3677D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311D83FB1C043ACB00E3677D /* PBXTargetDependency */,
+			);
+			name = LDZMoviewPlayer_XibUITests;
+			productName = LDZMoviewPlayer_XibUITests;
+			productReference = 311D83F91C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311D83CD1C043ACB00E3677D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LDZ;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DongZe;
+				TargetAttributes = {
+					311D83D41C043ACB00E3677D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					311D83ED1C043ACB00E3677D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 311D83D41C043ACB00E3677D;
+					};
+					311D83F81C043ACB00E3677D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 311D83D41C043ACB00E3677D;
+					};
+				};
+			};
+			buildConfigurationList = 311D83D01C043ACB00E3677D /* Build configuration list for PBXProject "LDZMoviewPlayer_Xib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311D83CC1C043ACB00E3677D;
+			productRefGroup = 311D83D61C043ACB00E3677D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311D83D41C043ACB00E3677D /* LDZMoviewPlayer_Xib */,
+				311D83ED1C043ACB00E3677D /* LDZMoviewPlayer_XibTests */,
+				311D83F81C043ACB00E3677D /* LDZMoviewPlayer_XibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311D83D31C043ACB00E3677D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311D840F1C043B4400E3677D /* LDZMoviePlayerController.xib in Resources */,
+				31EB1CAD1C055EEC00DB315C /* 播放器_音量.png in Resources */,
+				31EB1CAE1C055EEC00DB315C /* 收藏_plyer.png in Resources */,
+				311D83E81C043ACB00E3677D /* LaunchScreen.storyboard in Resources */,
+				31EB1CAC1C055EEC00DB315C /* 播放器_静音.png in Resources */,
+				31EB1CA91C055EEC00DB315C /* 播放器_播放.png in Resources */,
+				31EB1CA81C055EEC00DB315C /* 分享_选中.png in Resources */,
+				311D83E51C043ACB00E3677D /* Assets.xcassets in Resources */,
+				31EB1CAA1C055EEC00DB315C /* 播放器_暂停.png in Resources */,
+				31EB1CD61C0595DA00DB315C /* media_Player_left@3x.png in Resources */,
+				311D83E31C043ACB00E3677D /* Main.storyboard in Resources */,
+				31EB1CA61C055EEC00DB315C /* 5540385469401b10912f7a24-6.mp4 in Resources */,
+				31EB1CA71C055EEC00DB315C /* 分享_plyer.png in Resources */,
+				31EB1CB11C055EEC00DB315C /* 缓存_选中.png in Resources */,
+				31EB1CD81C0595DA00DB315C /* media_Player_right@3x.png in Resources */,
+				31EB1CAB1C055EEC00DB315C /* 播放器_返回.png in Resources */,
+				31EB1CAF1C055EEC00DB315C /* 收藏_选中_plyer.png in Resources */,
+				31EB1CD71C0595DA00DB315C /* media_Player_progress_bar@3x.png in Resources */,
+				31BD45ED1C1AA2CF00EB0114 /* slider-metal-handle.png in Resources */,
+				31EB1CB01C055EEC00DB315C /* 缓存_plyer.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83EC1C043ACB00E3677D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83F71C043ACB00E3677D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311D83D11C043ACB00E3677D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311D840E1C043B4400E3677D /* LDZMoviePlayerController.m in Sources */,
+				311D83E01C043ACB00E3677D /* ViewController.m in Sources */,
+				311D83DD1C043ACB00E3677D /* AppDelegate.m in Sources */,
+				311D83DA1C043ACB00E3677D /* main.m in Sources */,
+				3110B9AE1C1970DD009F6FF2 /* LDZAVPlayerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83EA1C043ACB00E3677D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311D83F31C043ACB00E3677D /* LDZMoviewPlayer_XibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311D83F51C043ACB00E3677D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311D83FE1C043ACB00E3677D /* LDZMoviewPlayer_XibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311D83F01C043ACB00E3677D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311D83D41C043ACB00E3677D /* LDZMoviewPlayer_Xib */;
+			targetProxy = 311D83EF1C043ACB00E3677D /* PBXContainerItemProxy */;
+		};
+		311D83FB1C043ACB00E3677D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311D83D41C043ACB00E3677D /* LDZMoviewPlayer_Xib */;
+			targetProxy = 311D83FA1C043ACB00E3677D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		311D83E11C043ACB00E3677D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311D83E21C043ACB00E3677D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		311D83E61C043ACB00E3677D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311D83E71C043ACB00E3677D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311D84001C043ACB00E3677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		311D84011C043ACB00E3677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311D84031C043ACB00E3677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LDZMoviewPlayer_Xib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-Xib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		311D84041C043ACB00E3677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LDZMoviewPlayer_Xib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-Xib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		311D84061C043ACB00E3677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LDZMoviewPlayer_XibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-XibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LDZMoviewPlayer_Xib.app/LDZMoviewPlayer_Xib";
+			};
+			name = Debug;
+		};
+		311D84071C043ACB00E3677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LDZMoviewPlayer_XibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-XibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LDZMoviewPlayer_Xib.app/LDZMoviewPlayer_Xib";
+			};
+			name = Release;
+		};
+		311D84091C043ACB00E3677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LDZMoviewPlayer_XibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-XibUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LDZMoviewPlayer_Xib;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		311D840A1C043ACB00E3677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LDZMoviewPlayer_XibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DongZe.LDZMoviewPlayer-XibUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LDZMoviewPlayer_Xib;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311D83D01C043ACB00E3677D /* Build configuration list for PBXProject "LDZMoviewPlayer_Xib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311D84001C043ACB00E3677D /* Debug */,
+				311D84011C043ACB00E3677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311D84021C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_Xib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311D84031C043ACB00E3677D /* Debug */,
+				311D84041C043ACB00E3677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311D84051C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_XibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311D84061C043ACB00E3677D /* Debug */,
+				311D84071C043ACB00E3677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311D84081C043ACB00E3677D /* Build configuration list for PBXNativeTarget "LDZMoviewPlayer_XibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311D84091C043ACB00E3677D /* Debug */,
+				311D840A1C043ACB00E3677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311D83CD1C043ACB00E3677D /* Project object */;
+}
