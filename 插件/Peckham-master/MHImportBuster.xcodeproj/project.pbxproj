@@ -1,0 +1,1916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D63FE4FF2BB4BD8A5050BF9 /* libPods-MHImportBuster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC86188A4B074F55AA6C93E6 /* libPods-MHImportBuster.a */; };
+		59323EC21C9ED2DB009F5FDA /* NSStringFilesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 59323EC11C9ED2DB009F5FDA /* NSStringFilesSpec.m */; };
+		71DA3DA040434EAFB76A3464 /* libPods-MHImportBusterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CE69C5567A407486A7155C /* libPods-MHImportBusterTests.a */; };
+		9611424118A6504400E03589 /* NSString+MHNSRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 9611423F18A6504400E03589 /* NSString+MHNSRange.h */; };
+		9611424218A6504400E03589 /* NSString+MHNSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9611424018A6504400E03589 /* NSString+MHNSRange.m */; };
+		9611424518A650C100E03589 /* NSString_MHNSRangeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9611424418A650C100E03589 /* NSString_MHNSRangeSpec.m */; };
+		96127D06191660A400BB5301 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9679BC62191650EF0004AB6B /* QuartzCore.framework */; };
+		9612CD4818DDA065003CF9E0 /* MHXcodeIssuesParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9612CD4718DDA065003CF9E0 /* MHXcodeIssuesParserSpec.m */; };
+		9618D21918DB72970049EE62 /* MHXcodeIssuesParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9618D21718DB72970049EE62 /* MHXcodeIssuesParser.h */; };
+		9618D21A18DB72970049EE62 /* MHXcodeIssuesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9618D21818DB72970049EE62 /* MHXcodeIssuesParser.m */; };
+		961C7DCE191F6ED200031FAD /* XCBuildSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 961C7DCC191F6ED200031FAD /* XCBuildSettings.h */; };
+		961C7DCF191F6ED200031FAD /* XCBuildSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C7DCD191F6ED200031FAD /* XCBuildSettings.m */; };
+		961C7DD2191F6F9000031FAD /* XCTarget+XCProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 961C7DD0191F6F9000031FAD /* XCTarget+XCProject.h */; };
+		961C7DD3191F6F9000031FAD /* XCTarget+XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C7DD1191F6F9000031FAD /* XCTarget+XCProject.m */; };
+		9623786F1895374B0012DEF1 /* MHImportBuster.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9628390718A63A11007EE520 /* DVTSourceTextStorage+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = 9628390518A63A11007EE520 /* DVTSourceTextStorage+Operations.h */; };
+		9628390818A63A11007EE520 /* DVTSourceTextStorage+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628390618A63A11007EE520 /* DVTSourceTextStorage+Operations.m */; };
+		9628390C18A63D35007EE520 /* DVTSourceTextStorageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628390B18A63D35007EE520 /* DVTSourceTextStorageSpec.m */; };
+		9629DE721969399500BD3CA1 /* XCSourceFile+MHSourceFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9629DE701969399500BD3CA1 /* XCSourceFile+MHSourceFile.h */; };
+		9629DE731969399500BD3CA1 /* XCSourceFile+MHSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9629DE711969399500BD3CA1 /* XCSourceFile+MHSourceFile.m */; };
+		963282CF18F933C50007699A /* MHInterfaceStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 963282CD18F933C50007699A /* MHInterfaceStatement.h */; };
+		963282D018F933C50007699A /* MHInterfaceStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282CE18F933C50007699A /* MHInterfaceStatement.m */; };
+		963282D218F961E80007699A /* MHInterfaceStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282D118F961E80007699A /* MHInterfaceStatementSpec.m */; };
+		963282D518F964930007699A /* PKToken+Equality.h in Headers */ = {isa = PBXBuildFile; fileRef = 963282D318F964930007699A /* PKToken+Equality.h */; };
+		963282D618F964930007699A /* PKToken+Equality.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282D418F964930007699A /* PKToken+Equality.m */; };
+		963282D918F966E30007699A /* PKToken+EqualitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282D818F966E30007699A /* PKToken+EqualitySpec.m */; };
+		963282DC18F96E9B0007699A /* MHPropertyStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 963282DA18F96E9B0007699A /* MHPropertyStatement.h */; };
+		963282DD18F96E9B0007699A /* MHPropertyStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282DB18F96E9B0007699A /* MHPropertyStatement.m */; };
+		963282E018F971090007699A /* MHPropertyQualifierStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 963282DE18F971090007699A /* MHPropertyQualifierStatement.h */; };
+		963282E118F971090007699A /* MHPropertyQualifierStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282DF18F971090007699A /* MHPropertyQualifierStatement.m */; };
+		963282E618F9733A0007699A /* MHPropertyStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282E518F9733A0007699A /* MHPropertyStatementSpec.m */; };
+		963282E818F973640007699A /* MHPropertyQualifierStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 963282E718F973640007699A /* MHPropertyQualifierStatementSpec.m */; };
+		964561C8189554E100026306 /* MHDocumentObserverSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 964561C7189554E100026306 /* MHDocumentObserverSpec.m */; };
+		964561CC1895750000026306 /* MHDocumentLOCObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 964561CA1895750000026306 /* MHDocumentLOCObserver.h */; };
+		964561CD1895750000026306 /* MHDocumentLOCObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 964561CB1895750000026306 /* MHDocumentLOCObserver.m */; };
+		964561D11895777A00026306 /* MHDocumentLOCObserverSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 964561D01895777A00026306 /* MHDocumentLOCObserverSpec.m */; };
+		9649770119711794006EF60A /* MHSourceFileSearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 964976FF19711794006EF60A /* MHSourceFileSearchController.h */; };
+		9649770219711794006EF60A /* MHSourceFileSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649770019711794006EF60A /* MHSourceFileSearchController.m */; };
+		9649770519711E53006EF60A /* MHSourceFileSearchControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649770419711E53006EF60A /* MHSourceFileSearchControllerSpec.m */; };
+		964B0A9518A79AD000E36C8E /* MHXcodeDocumentNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 964B0A9218A79AD000E36C8E /* MHXcodeDocumentNavigator.h */; };
+		964B0A9618A79AD000E36C8E /* MHXcodeDocumentNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B0A9318A79AD000E36C8E /* MHXcodeDocumentNavigator.m */; };
+		964B0A9718A79AD000E36C8E /* XCFXcodePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 964B0A9418A79AD000E36C8E /* XCFXcodePrivate.h */; };
+		964B0A9A18A79B8300E36C8E /* MHConcreteSourceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 964B0A9818A79B8300E36C8E /* MHConcreteSourceOperation.h */; };
+		964B0A9B18A79B8300E36C8E /* MHConcreteSourceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B0A9918A79B8300E36C8E /* MHConcreteSourceOperation.m */; };
+		964B0A9D18A79C7200E36C8E /* MHConcreteSourceOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B0A9C18A79C7200E36C8E /* MHConcreteSourceOperationSpec.m */; };
+		964B3F831949100C00B079BD /* MHOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 964B3F811949100C00B079BD /* MHOperation.h */; };
+		964B3F841949100C00B079BD /* MHOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B3F821949100C00B079BD /* MHOperation.m */; };
+		964B3F87194910A300B079BD /* MHSearchArrayOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 964B3F85194910A300B079BD /* MHSearchArrayOperation.h */; };
+		964B3F88194910A300B079BD /* MHSearchArrayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B3F86194910A300B079BD /* MHSearchArrayOperation.m */; };
+		964CEC60191663360012C63D /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964CEC5C191663360012C63D /* IDEFoundation.framework */; };
+		964CEC61191663360012C63D /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964CEC5D191663360012C63D /* IDEKit.framework */; };
+		964CEC62191663360012C63D /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964CEC5E191663360012C63D /* DVTFoundation.framework */; };
+		964CEC63191663360012C63D /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964CEC5F191663360012C63D /* DVTKit.framework */; };
+		96580BF8189D258B00466993 /* MHMethodStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96580BF7189D258B00466993 /* MHMethodStatementSpec.m */; };
+		96589FAE18FDDD6800654F2B /* NSArray+MHStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 96589FAC18FDDD6800654F2B /* NSArray+MHStatement.h */; };
+		96589FAF18FDDD6800654F2B /* NSArray+MHStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 96589FAD18FDDD6800654F2B /* NSArray+MHStatement.m */; };
+		9658B95E18A643D700A768B0 /* NSObject+MHLogMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 9658B95C18A643D700A768B0 /* NSObject+MHLogMethods.h */; };
+		9658B95F18A643D700A768B0 /* NSObject+MHLogMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9658B95D18A643D700A768B0 /* NSObject+MHLogMethods.m */; };
+		9679BC63191650EF0004AB6B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9679BC62191650EF0004AB6B /* QuartzCore.framework */; };
+		9683A66E18FAA402009E0232 /* MHMethodArgumentStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 9683A66C18FAA402009E0232 /* MHMethodArgumentStatement.h */; };
+		9683A66F18FAA402009E0232 /* MHMethodArgumentStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9683A66D18FAA402009E0232 /* MHMethodArgumentStatement.m */; };
+		9683A67318FAAF5E009E0232 /* MHMethodReturnStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 9683A67118FAAF5E009E0232 /* MHMethodReturnStatement.h */; };
+		9683A67418FAAF5E009E0232 /* MHMethodReturnStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9683A67218FAAF5E009E0232 /* MHMethodReturnStatement.m */; };
+		9683A67818FAB17A009E0232 /* PKTokenizer+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9683A67618FAB17A009E0232 /* PKTokenizer+Factory.h */; };
+		9683A67918FAB17A009E0232 /* PKTokenizer+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9683A67718FAB17A009E0232 /* PKTokenizer+Factory.m */; };
+		9683A67B18FAC062009E0232 /* MHMethodArgumentStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9683A67A18FAC062009E0232 /* MHMethodArgumentStatementSpec.m */; };
+		96872B0919163A6D0068AF7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBF1876B5BD00E4137F /* Cocoa.framework */; };
+		96872B0F19163A6D0068AF7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96872B0D19163A6D0068AF7A /* InfoPlist.strings */; };
+		96872B1119163A6D0068AF7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96872B1019163A6D0068AF7A /* main.m */; };
+		96872B1519163A6D0068AF7A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 96872B1319163A6D0068AF7A /* Credits.rtf */; };
+		96872B1819163A6D0068AF7A /* MHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96872B1719163A6D0068AF7A /* MHAppDelegate.m */; };
+		96872B1B19163A6E0068AF7A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96872B1919163A6E0068AF7A /* MainMenu.xib */; };
+		96872B1D19163A6E0068AF7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96872B1C19163A6E0068AF7A /* Images.xcassets */; };
+		968AD40E18986746009E6FE6 /* MHDocumentMethodLOCObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 968AD40C18986746009E6FE6 /* MHDocumentMethodLOCObserver.h */; };
+		968AD40F18986746009E6FE6 /* MHDocumentMethodLOCObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AD40D18986746009E6FE6 /* MHDocumentMethodLOCObserver.m */; };
+		9691A4B51947B0C3005407A1 /* XCProject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9691A4B31947B0C3005407A1 /* XCProject+Extensions.h */; };
+		9691A4B61947B0C3005407A1 /* XCProject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691A4B41947B0C3005407A1 /* XCProject+Extensions.m */; };
+		9699F6FB18954F7400AC7432 /* MHDocumentObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9699F6F918954F7400AC7432 /* MHDocumentObserver.h */; };
+		9699F6FC18954F7400AC7432 /* MHDocumentObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699F6FA18954F7400AC7432 /* MHDocumentObserver.m */; };
+		9699F6FD1895518900AC7432 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FC41876B5BD00E4137F /* AppKit.framework */; };
+		969A558B18DDA3890040EB6C /* MHAddImportOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 969A558918DDA3890040EB6C /* MHAddImportOperation.h */; };
+		969A558C18DDA3890040EB6C /* MHAddImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A558A18DDA3890040EB6C /* MHAddImportOperation.m */; };
+		969A558E18DDA3C20040EB6C /* MHAddImportOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 969A558D18DDA3C20040EB6C /* MHAddImportOperationSpec.m */; };
+		96A0953719177B5D00338093 /* MHImportListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A0953519177B5D00338093 /* MHImportListViewController.h */; };
+		96A0953819177B5D00338093 /* MHImportListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0953619177B5D00338093 /* MHImportListViewController.m */; };
+		96A0953B19177ED400338093 /* NSTextView+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A0953919177ED400338093 /* NSTextView+Operations.h */; };
+		96A0953C19177ED400338093 /* NSTextView+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A0953A19177ED400338093 /* NSTextView+Operations.m */; };
+		96B22FA719167CC8001E643C /* MHImportListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B22FA419167CC8001E643C /* MHImportListView.h */; };
+		96B22FA819167CC8001E643C /* MHImportListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B22FA519167CC8001E643C /* MHImportListView.m */; };
+		96B22FA919167CC8001E643C /* MHImportListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B22FA619167CC8001E643C /* MHImportListView.xib */; };
+		96B289681917A7AA00028CD2 /* MHImportBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */; };
+		96B64AC018DE01F4007DFC26 /* MHHeaderCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B64ABE18DE01F4007DFC26 /* MHHeaderCache.h */; };
+		96B64AC118DE01F4007DFC26 /* MHHeaderCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B64ABF18DE01F4007DFC26 /* MHHeaderCache.m */; };
+		96B64AC318DE099B007DFC26 /* MHHeaderCacheSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B64AC218DE099B007DFC26 /* MHHeaderCacheSpec.m */; };
+		96B64AC818DE0D8F007DFC26 /* NSFileManager+Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B64AC418DE0D8F007DFC26 /* NSFileManager+Headers.h */; };
+		96B64AC918DE0D8F007DFC26 /* NSFileManager+Headers.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B64AC518DE0D8F007DFC26 /* NSFileManager+Headers.m */; };
+		96B64ACA18DE0D8F007DFC26 /* NSString+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B64AC618DE0D8F007DFC26 /* NSString+Extensions.h */; };
+		96B64ACB18DE0D8F007DFC26 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B64AC718DE0D8F007DFC26 /* NSString+Extensions.m */; };
+		96C1BF321928BF2E007A4699 /* MHImportStatement+Construction.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C1BF301928BF2E007A4699 /* MHImportStatement+Construction.h */; };
+		96C1BF331928BF2E007A4699 /* MHImportStatement+Construction.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1BF311928BF2E007A4699 /* MHImportStatement+Construction.m */; };
+		96C1BF351928BF56007A4699 /* MHImportStatement+ConstructionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1BF341928BF56007A4699 /* MHImportStatement+ConstructionSpec.m */; };
+		96C21B84189CE00A00484D57 /* MHMethodStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C21B82189CE00A00484D57 /* MHMethodStatement.h */; };
+		96C21B85189CE00A00484D57 /* MHMethodStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C21B83189CE00A00484D57 /* MHMethodStatement.m */; };
+		96C7C376188F0F0F0017C5A7 /* MHImportBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */; };
+		96C7C377188F0F0F0017C5A7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3D6CED187736C000DF605A /* Carbon.framework */; };
+		96D864D118A6343C0065CD9A /* NSView+Dumping.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D864CF18A6343C0065CD9A /* NSView+Dumping.h */; };
+		96D864D218A6343C0065CD9A /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D864D018A6343C0065CD9A /* NSView+Dumping.m */; };
+		96D89DE918A7A4980087D248 /* MHRemoveDuplicateImportsOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DE818A7A4980087D248 /* MHRemoveDuplicateImportsOperationSpec.m */; };
+		96D89DEF18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D89DED18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.h */; };
+		96D89DF018A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DEE18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.m */; };
+		96D89DF218A7AD8F0087D248 /* MHSortImportsAlphabeticallyOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DF118A7AD8F0087D248 /* MHSortImportsAlphabeticallyOperationSpec.m */; };
+		96D89DF718A7B03C0087D248 /* MHImportStatement+Sorting.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D89DF518A7B03C0087D248 /* MHImportStatement+Sorting.h */; };
+		96D89DF818A7B03C0087D248 /* MHImportStatement+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DF618A7B03C0087D248 /* MHImportStatement+Sorting.m */; };
+		96D89DFB18A7B9470087D248 /* MHImportStatement_SortingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DFA18A7B9470087D248 /* MHImportStatement_SortingSpec.m */; };
+		96D89DFE18A7BE580087D248 /* PKToken+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D89DFC18A7BE580087D248 /* PKToken+Factory.h */; };
+		96D89DFF18A7BE580087D248 /* PKToken+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89DFD18A7BE580087D248 /* PKToken+Factory.m */; };
+		96D89E0118A7BEC20087D248 /* PKToken_FactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D89E0018A7BEC20087D248 /* PKToken_FactorySpec.m */; };
+		96E3D9B8192BF5AE00600588 /* MHStringLiteralStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E3D9B6192BF5AE00600588 /* MHStringLiteralStatement.h */; };
+		96E3D9B9192BF5AE00600588 /* MHStringLiteralStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3D9B7192BF5AE00600588 /* MHStringLiteralStatement.m */; };
+		96E3D9BB192BF71D00600588 /* MHStringLiteralStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3D9BA192BF71D00600588 /* MHStringLiteralStatementSpec.m */; };
+		96EA84C11916A79200CBEFE4 /* MHImportListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B22FA619167CC8001E643C /* MHImportListView.xib */; };
+		96EA84C51916ACDD00CBEFE4 /* MHTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EA84C31916ACDD00CBEFE4 /* MHTableView.h */; };
+		96EA84C61916ACDD00CBEFE4 /* MHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EA84C41916ACDD00CBEFE4 /* MHTableView.m */; };
+		96EA84C81916AEBB00CBEFE4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3D6CED187736C000DF605A /* Carbon.framework */; };
+		96FB646A18A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FB646818A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.h */; };
+		96FB646B18A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB646918A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.m */; };
+		96FC2B3C191B596E000CA4EB /* NSString+XCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FC2B38191B596E000CA4EB /* NSString+XCAdditions.h */; };
+		96FC2B3D191B596E000CA4EB /* NSString+XCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC2B39191B596E000CA4EB /* NSString+XCAdditions.m */; };
+		96FC2B3E191B596E000CA4EB /* XCWorkspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FC2B3A191B596E000CA4EB /* XCWorkspace.h */; };
+		96FC2B3F191B596E000CA4EB /* XCWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC2B3B191B596E000CA4EB /* XCWorkspace.m */; };
+		96FDF3DD19694C0100170DEB /* MHConcreteSourceFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FDF3DB19694C0100170DEB /* MHConcreteSourceFile.h */; };
+		96FDF3DE19694C0100170DEB /* MHConcreteSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDF3DC19694C0100170DEB /* MHConcreteSourceFile.m */; };
+		96FDF3EA19694EB600170DEB /* NSArray+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FDF3E819694EB600170DEB /* NSArray+Operations.h */; };
+		96FDF3EB19694EB600170DEB /* NSArray+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FDF3E919694EB600170DEB /* NSArray+Operations.m */; };
+		AD5427CA1876C37E00A2BC8E /* MHImportBuster.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FCC1876B5BD00E4137F /* MHImportBuster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6A1FC01876B5BD00E4137F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBF1876B5BD00E4137F /* Cocoa.framework */; };
+		AD6A1FCA1876B5BD00E4137F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD6A1FC81876B5BD00E4137F /* InfoPlist.strings */; };
+		AD6A1FD51876B5BD00E4137F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FD41876B5BD00E4137F /* XCTest.framework */; };
+		AD6A1FD61876B5BD00E4137F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBF1876B5BD00E4137F /* Cocoa.framework */; };
+		AD6A1FD91876B5BD00E4137F /* MHImportBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */; };
+		AD6A1FDF1876B5BD00E4137F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD6A1FDD1876B5BD00E4137F /* InfoPlist.strings */; };
+		AD6A20031876B68D00E4137F /* NSMutableIndexSet+NSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FEB1876B68D00E4137F /* NSMutableIndexSet+NSArray.h */; };
+		AD6A20041876B68D00E4137F /* NSMutableIndexSet+NSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FEC1876B68D00E4137F /* NSMutableIndexSet+NSArray.m */; };
+		AD6A20051876B68D00E4137F /* NSString+Files.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FED1876B68D00E4137F /* NSString+Files.h */; };
+		AD6A20061876B68D00E4137F /* NSString+Files.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FEE1876B68D00E4137F /* NSString+Files.m */; };
+		AD6A20071876B68D00E4137F /* MHFile.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FF01876B68D00E4137F /* MHFile.h */; };
+		AD6A20081876B68D00E4137F /* MHFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FF11876B68D00E4137F /* MHFile.m */; };
+		AD6A200D1876B68D00E4137F /* MHImportStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FF61876B68D00E4137F /* MHImportStatement.h */; };
+		AD6A200E1876B68D00E4137F /* MHImportStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FF71876B68D00E4137F /* MHImportStatement.m */; };
+		AD6A20131876B68D00E4137F /* MHStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FFC1876B68D00E4137F /* MHStatement.h */; };
+		AD6A20141876B68D00E4137F /* MHStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FFD1876B68D00E4137F /* MHStatement.m */; };
+		AD6A20151876B68D00E4137F /* MHStatementParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A1FFE1876B68D00E4137F /* MHStatementParser.h */; };
+		AD6A20161876B68D00E4137F /* MHStatementParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FFF1876B68D00E4137F /* MHStatementParser.m */; };
+		AD6A20171876B68D00E4137F /* MHStatements.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A20001876B68D00E4137F /* MHStatements.h */; };
+		AD6A20181876B68D00E4137F /* MHBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A20011876B68D00E4137F /* MHBlocks.h */; };
+		AD6A20191876B68D00E4137F /* MHImportBusterErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A20021876B68D00E4137F /* MHImportBusterErrors.h */; };
+		AD6A20271876B73200E4137F /* MHFileSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A201B1876B73200E4137F /* MHFileSpec.m */; };
+		AD6A202A1876B73200E4137F /* MHImportStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A20201876B73200E4137F /* MHImportStatementSpec.m */; };
+		AD6A202D1876B73200E4137F /* MHStatementParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A20231876B73200E4137F /* MHStatementParserSpec.m */; };
+		AD6A202E1876B73200E4137F /* MHStatementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A20241876B73200E4137F /* MHStatementSpec.m */; };
+		AD6A202F1876B8AE00E4137F /* NSString+Files.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6A1FEE1876B68D00E4137F /* NSString+Files.m */; };
+		ADB1CF7E1876C0B000D935C7 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB1CF7D1876C0B000D935C7 /* AppKit.framework */; };
+		ADB1CF801876C0B000D935C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB1CF7F1876C0B000D935C7 /* Foundation.framework */; };
+		ADB1CF861876C0B000D935C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADB1CF841876C0B000D935C7 /* InfoPlist.strings */; };
+		ADB1CF891876C0B000D935C7 /* MHImportBusterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1CF881876C0B000D935C7 /* MHImportBusterPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		599EC6571C00FD430047B022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6A1FB31876B5BD00E4137F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6A1FBB1876B5BD00E4137F;
+			remoteInfo = MHImportBuster;
+		};
+		59B330821B6D2BCE00135030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6A1FB31876B5BD00E4137F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96872B0719163A6D0068AF7A;
+			remoteInfo = MHImportBusterApp;
+		};
+		AD6A1FD71876B5BD00E4137F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6A1FB31876B5BD00E4137F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6A1FBB1876B5BD00E4137F;
+			remoteInfo = MHImportBuster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9623786E1895372A0012DEF1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9623786F1895374B0012DEF1 /* MHImportBuster.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E6C46054B3049289C35CE1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C3352BDD35D0A6C792BE45 /* Pods-MHImportBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHImportBuster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHImportBuster/Pods-MHImportBuster.debug.xcconfig"; sourceTree = "<group>"; };
+		50CE69C5567A407486A7155C /* libPods-MHImportBusterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHImportBusterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59323EC01C9ECE5E009F5FDA /* dont—import—me.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dont—import—me.h"; sourceTree = "<group>"; };
+		59323EC11C9ED2DB009F5FDA /* NSStringFilesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringFilesSpec.m; path = Categories/NSStringFilesSpec.m; sourceTree = "<group>"; };
+		81BCBA1C1D69FAA484D1A98A /* Pods-MHImportBusterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHImportBusterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHImportBusterTests/Pods-MHImportBusterTests.release.xcconfig"; sourceTree = "<group>"; };
+		96067BEF192C80F20095AEFF /* Bug_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bug_1.m; sourceTree = "<group>"; };
+		96067BF0192C80F20095AEFF /* Bug_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bug_2.m; sourceTree = "<group>"; };
+		96067BF1192C80F20095AEFF /* FileHandleInsertTestFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileHandleInsertTestFile; sourceTree = "<group>"; };
+		96067BF2192C80F20095AEFF /* FileHandleTestFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileHandleTestFile; sourceTree = "<group>"; };
+		96067BF3192C80F20095AEFF /* MHStringLiteralStatementSpec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MHStringLiteralStatementSpec; sourceTree = "<group>"; };
+		96067BF4192C80F20095AEFF /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		96067BF5192C80F20095AEFF /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		96067BF6192C80F20095AEFF /* MyClass_duplicateImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass_duplicateImports.h; sourceTree = "<group>"; };
+		9611423F18A6504400E03589 /* NSString+MHNSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MHNSRange.h"; sourceTree = "<group>"; };
+		9611424018A6504400E03589 /* NSString+MHNSRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MHNSRange.m"; sourceTree = "<group>"; };
+		9611424418A650C100E03589 /* NSString_MHNSRangeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSString_MHNSRangeSpec.m; path = Categories/NSString_MHNSRangeSpec.m; sourceTree = "<group>"; };
+		9612CD4718DDA065003CF9E0 /* MHXcodeIssuesParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHXcodeIssuesParserSpec.m; sourceTree = "<group>"; };
+		9618D21718DB72970049EE62 /* MHXcodeIssuesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHXcodeIssuesParser.h; sourceTree = "<group>"; };
+		9618D21818DB72970049EE62 /* MHXcodeIssuesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHXcodeIssuesParser.m; sourceTree = "<group>"; };
+		961C7DCC191F6ED200031FAD /* XCBuildSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildSettings.h; sourceTree = "<group>"; };
+		961C7DCD191F6ED200031FAD /* XCBuildSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBuildSettings.m; sourceTree = "<group>"; };
+		961C7DD0191F6F9000031FAD /* XCTarget+XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTarget+XCProject.h"; sourceTree = "<group>"; };
+		961C7DD1191F6F9000031FAD /* XCTarget+XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTarget+XCProject.m"; sourceTree = "<group>"; };
+		9628390518A63A11007EE520 /* DVTSourceTextStorage+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceTextStorage+Operations.h"; sourceTree = "<group>"; };
+		9628390618A63A11007EE520 /* DVTSourceTextStorage+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTSourceTextStorage+Operations.m"; sourceTree = "<group>"; };
+		9628390B18A63D35007EE520 /* DVTSourceTextStorageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTSourceTextStorageSpec.m; sourceTree = "<group>"; };
+		9629DE701969399500BD3CA1 /* XCSourceFile+MHSourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCSourceFile+MHSourceFile.h"; path = "../External/XcodeEditor/Categories/XCSourceFile+MHSourceFile.h"; sourceTree = "<group>"; };
+		9629DE711969399500BD3CA1 /* XCSourceFile+MHSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCSourceFile+MHSourceFile.m"; path = "../External/XcodeEditor/Categories/XCSourceFile+MHSourceFile.m"; sourceTree = "<group>"; };
+		963282CD18F933C50007699A /* MHInterfaceStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHInterfaceStatement.h; sourceTree = "<group>"; };
+		963282CE18F933C50007699A /* MHInterfaceStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHInterfaceStatement.m; sourceTree = "<group>"; };
+		963282D118F961E80007699A /* MHInterfaceStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHInterfaceStatementSpec.m; sourceTree = "<group>"; };
+		963282D318F964930007699A /* PKToken+Equality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKToken+Equality.h"; sourceTree = "<group>"; };
+		963282D418F964930007699A /* PKToken+Equality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKToken+Equality.m"; sourceTree = "<group>"; };
+		963282D818F966E30007699A /* PKToken+EqualitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PKToken+EqualitySpec.m"; path = "Categories/PKToken+EqualitySpec.m"; sourceTree = "<group>"; };
+		963282DA18F96E9B0007699A /* MHPropertyStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPropertyStatement.h; sourceTree = "<group>"; };
+		963282DB18F96E9B0007699A /* MHPropertyStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPropertyStatement.m; sourceTree = "<group>"; };
+		963282DE18F971090007699A /* MHPropertyQualifierStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPropertyQualifierStatement.h; sourceTree = "<group>"; };
+		963282DF18F971090007699A /* MHPropertyQualifierStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPropertyQualifierStatement.m; sourceTree = "<group>"; };
+		963282E518F9733A0007699A /* MHPropertyStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPropertyStatementSpec.m; sourceTree = "<group>"; };
+		963282E718F973640007699A /* MHPropertyQualifierStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPropertyQualifierStatementSpec.m; sourceTree = "<group>"; };
+		964561C7189554E100026306 /* MHDocumentObserverSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDocumentObserverSpec.m; sourceTree = "<group>"; };
+		964561CA1895750000026306 /* MHDocumentLOCObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDocumentLOCObserver.h; sourceTree = "<group>"; };
+		964561CB1895750000026306 /* MHDocumentLOCObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDocumentLOCObserver.m; sourceTree = "<group>"; };
+		964561D01895777A00026306 /* MHDocumentLOCObserverSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDocumentLOCObserverSpec.m; sourceTree = "<group>"; };
+		964976FF19711794006EF60A /* MHSourceFileSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSourceFileSearchController.h; path = Controller/MHSourceFileSearchController.h; sourceTree = "<group>"; };
+		9649770019711794006EF60A /* MHSourceFileSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSourceFileSearchController.m; path = Controller/MHSourceFileSearchController.m; sourceTree = "<group>"; };
+		9649770419711E53006EF60A /* MHSourceFileSearchControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSourceFileSearchControllerSpec.m; path = Controllers/MHSourceFileSearchControllerSpec.m; sourceTree = "<group>"; };
+		964B0A8F18A799A000E36C8E /* MHSourceOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceOperation.h; sourceTree = "<group>"; };
+		964B0A9218A79AD000E36C8E /* MHXcodeDocumentNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHXcodeDocumentNavigator.h; path = ../External/Benoit/MHXcodeDocumentNavigator.h; sourceTree = "<group>"; };
+		964B0A9318A79AD000E36C8E /* MHXcodeDocumentNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHXcodeDocumentNavigator.m; path = ../External/Benoit/MHXcodeDocumentNavigator.m; sourceTree = "<group>"; };
+		964B0A9418A79AD000E36C8E /* XCFXcodePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFXcodePrivate.h; sourceTree = "<group>"; };
+		964B0A9818A79B8300E36C8E /* MHConcreteSourceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConcreteSourceOperation.h; sourceTree = "<group>"; };
+		964B0A9918A79B8300E36C8E /* MHConcreteSourceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConcreteSourceOperation.m; sourceTree = "<group>"; };
+		964B0A9C18A79C7200E36C8E /* MHConcreteSourceOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConcreteSourceOperationSpec.m; sourceTree = "<group>"; };
+		964B3F811949100C00B079BD /* MHOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHOperation.h; sourceTree = "<group>"; };
+		964B3F821949100C00B079BD /* MHOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHOperation.m; sourceTree = "<group>"; };
+		964B3F85194910A300B079BD /* MHSearchArrayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSearchArrayOperation.h; sourceTree = "<group>"; };
+		964B3F86194910A300B079BD /* MHSearchArrayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSearchArrayOperation.m; sourceTree = "<group>"; };
+		964CEC5C191663360012C63D /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEFoundation.framework; sourceTree = "<group>"; };
+		964CEC5D191663360012C63D /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../../../../Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<group>"; };
+		964CEC5E191663360012C63D /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework; sourceTree = "<group>"; };
+		964CEC5F191663360012C63D /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		96580BF7189D258B00466993 /* MHMethodStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMethodStatementSpec.m; sourceTree = "<group>"; };
+		96589FAC18FDDD6800654F2B /* NSArray+MHStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MHStatement.h"; sourceTree = "<group>"; };
+		96589FAD18FDDD6800654F2B /* NSArray+MHStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MHStatement.m"; sourceTree = "<group>"; };
+		9658B95C18A643D700A768B0 /* NSObject+MHLogMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MHLogMethods.h"; sourceTree = "<group>"; };
+		9658B95D18A643D700A768B0 /* NSObject+MHLogMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MHLogMethods.m"; sourceTree = "<group>"; };
+		9661D52019694B0600A9930E /* MHSourceFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceFile.h; sourceTree = "<group>"; };
+		9664484B1956F1AF0040EC56 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9679BC62191650EF0004AB6B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9683A66C18FAA402009E0232 /* MHMethodArgumentStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMethodArgumentStatement.h; sourceTree = "<group>"; };
+		9683A66D18FAA402009E0232 /* MHMethodArgumentStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMethodArgumentStatement.m; sourceTree = "<group>"; };
+		9683A67118FAAF5E009E0232 /* MHMethodReturnStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMethodReturnStatement.h; sourceTree = "<group>"; };
+		9683A67218FAAF5E009E0232 /* MHMethodReturnStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMethodReturnStatement.m; sourceTree = "<group>"; };
+		9683A67618FAB17A009E0232 /* PKTokenizer+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKTokenizer+Factory.h"; sourceTree = "<group>"; };
+		9683A67718FAB17A009E0232 /* PKTokenizer+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKTokenizer+Factory.m"; sourceTree = "<group>"; };
+		9683A67A18FAC062009E0232 /* MHMethodArgumentStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMethodArgumentStatementSpec.m; sourceTree = "<group>"; };
+		96872B0819163A6D0068AF7A /* MHImportBusterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHImportBusterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96872B0C19163A6D0068AF7A /* MHImportBusterApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHImportBusterApp-Info.plist"; sourceTree = "<group>"; };
+		96872B0E19163A6D0068AF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96872B1019163A6D0068AF7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96872B1219163A6D0068AF7A /* MHImportBusterApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHImportBusterApp-Prefix.pch"; sourceTree = "<group>"; };
+		96872B1419163A6D0068AF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		96872B1619163A6D0068AF7A /* MHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAppDelegate.h; sourceTree = "<group>"; };
+		96872B1719163A6D0068AF7A /* MHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAppDelegate.m; sourceTree = "<group>"; };
+		96872B1A19163A6E0068AF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96872B1C19163A6E0068AF7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		968AD40C18986746009E6FE6 /* MHDocumentMethodLOCObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDocumentMethodLOCObserver.h; sourceTree = "<group>"; };
+		968AD40D18986746009E6FE6 /* MHDocumentMethodLOCObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDocumentMethodLOCObserver.m; sourceTree = "<group>"; };
+		9691A4B31947B0C3005407A1 /* XCProject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+Extensions.h"; sourceTree = "<group>"; };
+		9691A4B41947B0C3005407A1 /* XCProject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+Extensions.m"; sourceTree = "<group>"; };
+		9699F6F918954F7400AC7432 /* MHDocumentObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDocumentObserver.h; sourceTree = "<group>"; };
+		9699F6FA18954F7400AC7432 /* MHDocumentObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDocumentObserver.m; sourceTree = "<group>"; };
+		969A558918DDA3890040EB6C /* MHAddImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAddImportOperation.h; sourceTree = "<group>"; };
+		969A558A18DDA3890040EB6C /* MHAddImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAddImportOperation.m; sourceTree = "<group>"; };
+		969A558D18DDA3C20040EB6C /* MHAddImportOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHAddImportOperationSpec.m; path = Operations/MHAddImportOperationSpec.m; sourceTree = "<group>"; };
+		96A095321917673E00338093 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		96A0953519177B5D00338093 /* MHImportListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHImportListViewController.h; path = Controller/MHImportListViewController.h; sourceTree = "<group>"; };
+		96A0953619177B5D00338093 /* MHImportListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHImportListViewController.m; path = Controller/MHImportListViewController.m; sourceTree = "<group>"; };
+		96A0953919177ED400338093 /* NSTextView+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+Operations.h"; sourceTree = "<group>"; };
+		96A0953A19177ED400338093 /* NSTextView+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+Operations.m"; sourceTree = "<group>"; };
+		96B22FA419167CC8001E643C /* MHImportListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHImportListView.h; sourceTree = "<group>"; };
+		96B22FA519167CC8001E643C /* MHImportListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHImportListView.m; sourceTree = "<group>"; };
+		96B22FA619167CC8001E643C /* MHImportListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHImportListView.xib; sourceTree = "<group>"; };
+		96B64ABE18DE01F4007DFC26 /* MHHeaderCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHeaderCache.h; sourceTree = "<group>"; };
+		96B64ABF18DE01F4007DFC26 /* MHHeaderCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHeaderCache.m; sourceTree = "<group>"; };
+		96B64AC218DE099B007DFC26 /* MHHeaderCacheSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHeaderCacheSpec.m; sourceTree = "<group>"; };
+		96B64AC418DE0D8F007DFC26 /* NSFileManager+Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Headers.h"; sourceTree = "<group>"; };
+		96B64AC518DE0D8F007DFC26 /* NSFileManager+Headers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Headers.m"; sourceTree = "<group>"; };
+		96B64AC618DE0D8F007DFC26 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		96B64AC718DE0D8F007DFC26 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		96C1BF301928BF2E007A4699 /* MHImportStatement+Construction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHImportStatement+Construction.h"; sourceTree = "<group>"; };
+		96C1BF311928BF2E007A4699 /* MHImportStatement+Construction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHImportStatement+Construction.m"; sourceTree = "<group>"; };
+		96C1BF341928BF56007A4699 /* MHImportStatement+ConstructionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MHImportStatement+ConstructionSpec.m"; path = "Categories/MHImportStatement+ConstructionSpec.m"; sourceTree = "<group>"; };
+		96C21B82189CE00A00484D57 /* MHMethodStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMethodStatement.h; sourceTree = "<group>"; };
+		96C21B83189CE00A00484D57 /* MHMethodStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMethodStatement.m; sourceTree = "<group>"; };
+		96D864CF18A6343C0065CD9A /* NSView+Dumping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Dumping.h"; sourceTree = "<group>"; };
+		96D864D018A6343C0065CD9A /* NSView+Dumping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dumping.m"; sourceTree = "<group>"; };
+		96D89DE818A7A4980087D248 /* MHRemoveDuplicateImportsOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHRemoveDuplicateImportsOperationSpec.m; sourceTree = "<group>"; };
+		96D89DED18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSortImportsAlphabeticallyOperation.h; sourceTree = "<group>"; };
+		96D89DEE18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSortImportsAlphabeticallyOperation.m; sourceTree = "<group>"; };
+		96D89DF118A7AD8F0087D248 /* MHSortImportsAlphabeticallyOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSortImportsAlphabeticallyOperationSpec.m; path = Operations/MHSortImportsAlphabeticallyOperationSpec.m; sourceTree = "<group>"; };
+		96D89DF518A7B03C0087D248 /* MHImportStatement+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHImportStatement+Sorting.h"; sourceTree = "<group>"; };
+		96D89DF618A7B03C0087D248 /* MHImportStatement+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHImportStatement+Sorting.m"; sourceTree = "<group>"; };
+		96D89DFA18A7B9470087D248 /* MHImportStatement_SortingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHImportStatement_SortingSpec.m; sourceTree = "<group>"; };
+		96D89DFC18A7BE580087D248 /* PKToken+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKToken+Factory.h"; sourceTree = "<group>"; };
+		96D89DFD18A7BE580087D248 /* PKToken+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKToken+Factory.m"; sourceTree = "<group>"; };
+		96D89E0018A7BEC20087D248 /* PKToken_FactorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKToken_FactorySpec.m; path = Categories/PKToken_FactorySpec.m; sourceTree = "<group>"; };
+		96E3D9B6192BF5AE00600588 /* MHStringLiteralStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHStringLiteralStatement.h; sourceTree = "<group>"; };
+		96E3D9B7192BF5AE00600588 /* MHStringLiteralStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStringLiteralStatement.m; sourceTree = "<group>"; };
+		96E3D9BA192BF71D00600588 /* MHStringLiteralStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStringLiteralStatementSpec.m; sourceTree = "<group>"; };
+		96EA84C31916ACDD00CBEFE4 /* MHTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTableView.h; sourceTree = "<group>"; };
+		96EA84C41916ACDD00CBEFE4 /* MHTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTableView.m; sourceTree = "<group>"; };
+		96F2916519447098008CC5AB /* Bug_3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bug_3.m; sourceTree = "<group>"; };
+		96FB646818A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHRemoveDuplicateImportsOperation.h; sourceTree = "<group>"; };
+		96FB646918A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHRemoveDuplicateImportsOperation.m; sourceTree = "<group>"; };
+		96FC2B38191B596E000CA4EB /* NSString+XCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XCAdditions.h"; sourceTree = "<group>"; };
+		96FC2B39191B596E000CA4EB /* NSString+XCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCAdditions.m"; sourceTree = "<group>"; };
+		96FC2B3A191B596E000CA4EB /* XCWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCWorkspace.h; sourceTree = "<group>"; };
+		96FC2B3B191B596E000CA4EB /* XCWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCWorkspace.m; sourceTree = "<group>"; };
+		96FDF3DB19694C0100170DEB /* MHConcreteSourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHConcreteSourceFile.h; sourceTree = "<group>"; };
+		96FDF3DC19694C0100170DEB /* MHConcreteSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHConcreteSourceFile.m; sourceTree = "<group>"; };
+		96FDF3E819694EB600170DEB /* NSArray+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Operations.h"; sourceTree = "<group>"; };
+		96FDF3E919694EB600170DEB /* NSArray+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operations.m"; sourceTree = "<group>"; };
+		AD3D6CED187736C000DF605A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHImportBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6A1FBF1876B5BD00E4137F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AD6A1FC21876B5BD00E4137F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD6A1FC31876B5BD00E4137F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AD6A1FC41876B5BD00E4137F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AD6A1FC71876B5BD00E4137F /* MHImportBuster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHImportBuster-Info.plist"; sourceTree = "<group>"; };
+		AD6A1FC91876B5BD00E4137F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD6A1FCB1876B5BD00E4137F /* MHImportBuster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHImportBuster-Prefix.pch"; sourceTree = "<group>"; };
+		AD6A1FCC1876B5BD00E4137F /* MHImportBuster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHImportBuster.h; sourceTree = "<group>"; };
+		AD6A1FD31876B5BD00E4137F /* MHImportBusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHImportBusterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6A1FD41876B5BD00E4137F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD6A1FDC1876B5BD00E4137F /* MHImportBusterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHImportBusterTests-Info.plist"; sourceTree = "<group>"; };
+		AD6A1FDE1876B5BD00E4137F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD6A1FEB1876B68D00E4137F /* NSMutableIndexSet+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableIndexSet+NSArray.h"; sourceTree = "<group>"; };
+		AD6A1FEC1876B68D00E4137F /* NSMutableIndexSet+NSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableIndexSet+NSArray.m"; sourceTree = "<group>"; };
+		AD6A1FED1876B68D00E4137F /* NSString+Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Files.h"; sourceTree = "<group>"; };
+		AD6A1FEE1876B68D00E4137F /* NSString+Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Files.m"; sourceTree = "<group>"; };
+		AD6A1FF01876B68D00E4137F /* MHFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFile.h; sourceTree = "<group>"; };
+		AD6A1FF11876B68D00E4137F /* MHFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFile.m; sourceTree = "<group>"; };
+		AD6A1FF61876B68D00E4137F /* MHImportStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHImportStatement.h; sourceTree = "<group>"; };
+		AD6A1FF71876B68D00E4137F /* MHImportStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHImportStatement.m; sourceTree = "<group>"; };
+		AD6A1FFC1876B68D00E4137F /* MHStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHStatement.h; sourceTree = "<group>"; };
+		AD6A1FFD1876B68D00E4137F /* MHStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStatement.m; sourceTree = "<group>"; };
+		AD6A1FFE1876B68D00E4137F /* MHStatementParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHStatementParser.h; sourceTree = "<group>"; };
+		AD6A1FFF1876B68D00E4137F /* MHStatementParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStatementParser.m; sourceTree = "<group>"; };
+		AD6A20001876B68D00E4137F /* MHStatements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHStatements.h; sourceTree = "<group>"; };
+		AD6A20011876B68D00E4137F /* MHBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBlocks.h; sourceTree = "<group>"; };
+		AD6A20021876B68D00E4137F /* MHImportBusterErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHImportBusterErrors.h; sourceTree = "<group>"; };
+		AD6A201B1876B73200E4137F /* MHFileSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFileSpec.m; sourceTree = "<group>"; };
+		AD6A201E1876B73200E4137F /* MHImportBusterTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHImportBusterTests-Prefix.pch"; sourceTree = "<group>"; };
+		AD6A201F1876B73200E4137F /* MHImportBusterTestsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHImportBusterTestsHelper.h; sourceTree = "<group>"; };
+		AD6A20201876B73200E4137F /* MHImportStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHImportStatementSpec.m; sourceTree = "<group>"; };
+		AD6A20231876B73200E4137F /* MHStatementParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStatementParserSpec.m; sourceTree = "<group>"; };
+		AD6A20241876B73200E4137F /* MHStatementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHStatementSpec.m; sourceTree = "<group>"; };
+		AD6A20251876B73200E4137F /* MHTestTokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTestTokens.h; sourceTree = "<group>"; };
+		ADB1CF7C1876C0B000D935C7 /* Peckham.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Peckham.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB1CF7D1876C0B000D935C7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		ADB1CF7F1876C0B000D935C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADB1CF831876C0B000D935C7 /* MHImportBusterPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHImportBusterPlugin-Info.plist"; sourceTree = "<group>"; };
+		ADB1CF851876C0B000D935C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADB1CF871876C0B000D935C7 /* MHImportBusterPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHImportBusterPlugin.h; sourceTree = "<group>"; };
+		ADB1CF881876C0B000D935C7 /* MHImportBusterPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHImportBusterPlugin.m; sourceTree = "<group>"; };
+		ADB1CF8A1876C0B000D935C7 /* MHImportBusterPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHImportBusterPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		CAD4AC6DD582B92C92C5774C /* Pods-MHImportBusterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHImportBusterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHImportBusterTests/Pods-MHImportBusterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC86188A4B074F55AA6C93E6 /* libPods-MHImportBuster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHImportBuster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19CF76BE066C808B18BD0F7 /* Pods-MHImportBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHImportBuster.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHImportBuster/Pods-MHImportBuster.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96872B0519163A6D0068AF7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679BC63191650EF0004AB6B /* QuartzCore.framework in Frameworks */,
+				96872B0919163A6D0068AF7A /* Cocoa.framework in Frameworks */,
+				96B289681917A7AA00028CD2 /* MHImportBuster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FB81876B5BD00E4137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA84C81916AEBB00CBEFE4 /* Carbon.framework in Frameworks */,
+				9699F6FD1895518900AC7432 /* AppKit.framework in Frameworks */,
+				AD6A1FC01876B5BD00E4137F /* Cocoa.framework in Frameworks */,
+				1D63FE4FF2BB4BD8A5050BF9 /* libPods-MHImportBuster.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FD01876B5BD00E4137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6A1FD61876B5BD00E4137F /* Cocoa.framework in Frameworks */,
+				AD6A1FD51876B5BD00E4137F /* XCTest.framework in Frameworks */,
+				AD6A1FD91876B5BD00E4137F /* MHImportBuster.framework in Frameworks */,
+				71DA3DA040434EAFB76A3464 /* libPods-MHImportBusterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB1CF791876C0AF00D935C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964CEC62191663360012C63D /* DVTFoundation.framework in Frameworks */,
+				964CEC61191663360012C63D /* IDEKit.framework in Frameworks */,
+				964CEC63191663360012C63D /* DVTKit.framework in Frameworks */,
+				964CEC60191663360012C63D /* IDEFoundation.framework in Frameworks */,
+				96127D06191660A400BB5301 /* QuartzCore.framework in Frameworks */,
+				96C7C377188F0F0F0017C5A7 /* Carbon.framework in Frameworks */,
+				ADB1CF7E1876C0B000D935C7 /* AppKit.framework in Frameworks */,
+				ADB1CF801876C0B000D935C7 /* Foundation.framework in Frameworks */,
+				96C7C376188F0F0F0017C5A7 /* MHImportBuster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E2BEC1AB81B8B16F2B9D786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C3352BDD35D0A6C792BE45 /* Pods-MHImportBuster.debug.xcconfig */,
+				E19CF76BE066C808B18BD0F7 /* Pods-MHImportBuster.release.xcconfig */,
+				CAD4AC6DD582B92C92C5774C /* Pods-MHImportBusterTests.debug.xcconfig */,
+				81BCBA1C1D69FAA484D1A98A /* Pods-MHImportBusterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96067BEE192C80F20095AEFF /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				59323EC01C9ECE5E009F5FDA /* dont—import—me.h */,
+				96F29166194470A6008CC5AB /* Bugs */,
+				96067BF1192C80F20095AEFF /* FileHandleInsertTestFile */,
+				96067BF2192C80F20095AEFF /* FileHandleTestFile */,
+				96067BF3192C80F20095AEFF /* MHStringLiteralStatementSpec */,
+				96067BF4192C80F20095AEFF /* MyClass.h */,
+				96067BF5192C80F20095AEFF /* MyClass.m */,
+				96067BF6192C80F20095AEFF /* MyClass_duplicateImports.h */,
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		9611424318A6509800E03589 /* Category Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9611424418A650C100E03589 /* NSString_MHNSRangeSpec.m */,
+				96D89DFA18A7B9470087D248 /* MHImportStatement_SortingSpec.m */,
+				96C1BF341928BF56007A4699 /* MHImportStatement+ConstructionSpec.m */,
+				96D89E0018A7BEC20087D248 /* PKToken_FactorySpec.m */,
+				963282D818F966E30007699A /* PKToken+EqualitySpec.m */,
+				59323EC11C9ED2DB009F5FDA /* NSStringFilesSpec.m */,
+			);
+			name = "Category Tests";
+			sourceTree = "<group>";
+		};
+		9618D21518DB72670049EE62 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				9618D21718DB72970049EE62 /* MHXcodeIssuesParser.h */,
+				9618D21818DB72970049EE62 /* MHXcodeIssuesParser.m */,
+			);
+			name = Issues;
+			sourceTree = "<group>";
+		};
+		9628390918A63BBA007EE520 /* DVT */ = {
+			isa = PBXGroup;
+			children = (
+				9628390518A63A11007EE520 /* DVTSourceTextStorage+Operations.h */,
+				9628390618A63A11007EE520 /* DVTSourceTextStorage+Operations.m */,
+			);
+			name = DVT;
+			sourceTree = "<group>";
+		};
+		9628390A18A63D08007EE520 /* DVT */ = {
+			isa = PBXGroup;
+			children = (
+				9628390B18A63D35007EE520 /* DVTSourceTextStorageSpec.m */,
+			);
+			name = DVT;
+			sourceTree = "<group>";
+		};
+		963282D718F964970007699A /* PKToken */ = {
+			isa = PBXGroup;
+			children = (
+				96D89DFC18A7BE580087D248 /* PKToken+Factory.h */,
+				96D89DFD18A7BE580087D248 /* PKToken+Factory.m */,
+				963282D318F964930007699A /* PKToken+Equality.h */,
+				963282D418F964930007699A /* PKToken+Equality.m */,
+			);
+			name = PKToken;
+			sourceTree = "<group>";
+		};
+		964561C91895587200026306 /* Document Observers */ = {
+			isa = PBXGroup;
+			children = (
+				9699F6F918954F7400AC7432 /* MHDocumentObserver.h */,
+				9699F6FA18954F7400AC7432 /* MHDocumentObserver.m */,
+				964561CA1895750000026306 /* MHDocumentLOCObserver.h */,
+				964561CB1895750000026306 /* MHDocumentLOCObserver.m */,
+				968AD40C18986746009E6FE6 /* MHDocumentMethodLOCObserver.h */,
+				968AD40D18986746009E6FE6 /* MHDocumentMethodLOCObserver.m */,
+			);
+			name = "Document Observers";
+			sourceTree = "<group>";
+		};
+		964561D21895778700026306 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A20251876B73200E4137F /* MHTestTokens.h */,
+				AD6A201F1876B73200E4137F /* MHImportBusterTestsHelper.h */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		9649770319711E28006EF60A /* Controllers Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9649770419711E53006EF60A /* MHSourceFileSearchControllerSpec.m */,
+			);
+			name = "Controllers Tests";
+			sourceTree = "<group>";
+		};
+		964B0A9018A79AD000E36C8E /* External */ = {
+			isa = PBXGroup;
+			children = (
+				96FC2B36191B596E000CA4EB /* XcodeEditor */,
+				964B0A9118A79AD000E36C8E /* Benoit */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		964B0A9118A79AD000E36C8E /* Benoit */ = {
+			isa = PBXGroup;
+			children = (
+				964B0A9418A79AD000E36C8E /* XCFXcodePrivate.h */,
+			);
+			path = Benoit;
+			sourceTree = "<group>";
+		};
+		96542C6918A798B900246A79 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				964B3F811949100C00B079BD /* MHOperation.h */,
+				964B3F821949100C00B079BD /* MHOperation.m */,
+				964B3F85194910A300B079BD /* MHSearchArrayOperation.h */,
+				964B3F86194910A300B079BD /* MHSearchArrayOperation.m */,
+				964B0A8F18A799A000E36C8E /* MHSourceOperation.h */,
+				964B0A9818A79B8300E36C8E /* MHConcreteSourceOperation.h */,
+				964B0A9918A79B8300E36C8E /* MHConcreteSourceOperation.m */,
+				96FB646818A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.h */,
+				96FB646918A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.m */,
+				96D89DED18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.h */,
+				96D89DEE18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.m */,
+				969A558918DDA3890040EB6C /* MHAddImportOperation.h */,
+				969A558A18DDA3890040EB6C /* MHAddImportOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		96580BF6189D198200466993 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				96E3D9B5192BF58D00600588 /* Literals */,
+				9683A67018FAAF40009E0232 /* Methods */,
+				AD6A1FFC1876B68D00E4137F /* MHStatement.h */,
+				AD6A1FFD1876B68D00E4137F /* MHStatement.m */,
+				AD6A20001876B68D00E4137F /* MHStatements.h */,
+				AD6A1FF61876B68D00E4137F /* MHImportStatement.h */,
+				AD6A1FF71876B68D00E4137F /* MHImportStatement.m */,
+				963282CD18F933C50007699A /* MHInterfaceStatement.h */,
+				963282CE18F933C50007699A /* MHInterfaceStatement.m */,
+				963282DA18F96E9B0007699A /* MHPropertyStatement.h */,
+				963282DB18F96E9B0007699A /* MHPropertyStatement.m */,
+				963282DE18F971090007699A /* MHPropertyQualifierStatement.h */,
+				963282DF18F971090007699A /* MHPropertyQualifierStatement.m */,
+			);
+			name = Statements;
+			sourceTree = "<group>";
+		};
+		9661D52119694B8200A9930E /* XcodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				9629DE701969399500BD3CA1 /* XCSourceFile+MHSourceFile.h */,
+				9629DE711969399500BD3CA1 /* XCSourceFile+MHSourceFile.m */,
+			);
+			name = XcodeEditor;
+			sourceTree = "<group>";
+		};
+		9683A67018FAAF40009E0232 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				9683A66C18FAA402009E0232 /* MHMethodArgumentStatement.h */,
+				9683A66D18FAA402009E0232 /* MHMethodArgumentStatement.m */,
+				9683A67118FAAF5E009E0232 /* MHMethodReturnStatement.h */,
+				9683A67218FAAF5E009E0232 /* MHMethodReturnStatement.m */,
+				96C21B82189CE00A00484D57 /* MHMethodStatement.h */,
+				96C21B83189CE00A00484D57 /* MHMethodStatement.m */,
+			);
+			name = Methods;
+			sourceTree = "<group>";
+		};
+		9683A67518FAB124009E0232 /* PKTokenizer */ = {
+			isa = PBXGroup;
+			children = (
+				9683A67618FAB17A009E0232 /* PKTokenizer+Factory.h */,
+				9683A67718FAB17A009E0232 /* PKTokenizer+Factory.m */,
+			);
+			name = PKTokenizer;
+			sourceTree = "<group>";
+		};
+		96872B0A19163A6D0068AF7A /* MHImportBusterApp */ = {
+			isa = PBXGroup;
+			children = (
+				96872B1619163A6D0068AF7A /* MHAppDelegate.h */,
+				96872B1719163A6D0068AF7A /* MHAppDelegate.m */,
+				96872B1919163A6E0068AF7A /* MainMenu.xib */,
+				96872B1C19163A6E0068AF7A /* Images.xcassets */,
+				96872B0B19163A6D0068AF7A /* Supporting Files */,
+			);
+			path = MHImportBusterApp;
+			sourceTree = "<group>";
+		};
+		96872B0B19163A6D0068AF7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96872B0C19163A6D0068AF7A /* MHImportBusterApp-Info.plist */,
+				96872B0D19163A6D0068AF7A /* InfoPlist.strings */,
+				96872B1019163A6D0068AF7A /* main.m */,
+				96872B1219163A6D0068AF7A /* MHImportBusterApp-Prefix.pch */,
+				96872B1319163A6D0068AF7A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A0953419177B3200338093 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96A0953519177B5D00338093 /* MHImportListViewController.h */,
+				96A0953619177B5D00338093 /* MHImportListViewController.m */,
+				964976FF19711794006EF60A /* MHSourceFileSearchController.h */,
+				9649770019711794006EF60A /* MHSourceFileSearchController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		96B22FA319167CC8001E643C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96EA84C31916ACDD00CBEFE4 /* MHTableView.h */,
+				96EA84C41916ACDD00CBEFE4 /* MHTableView.m */,
+				96B22FA419167CC8001E643C /* MHImportListView.h */,
+				96B22FA519167CC8001E643C /* MHImportListView.m */,
+				96B22FA619167CC8001E643C /* MHImportListView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96D89DE718A7A4570087D248 /* Operations Tests */ = {
+			isa = PBXGroup;
+			children = (
+				964B0A9C18A79C7200E36C8E /* MHConcreteSourceOperationSpec.m */,
+				96D89DE818A7A4980087D248 /* MHRemoveDuplicateImportsOperationSpec.m */,
+				96D89DF118A7AD8F0087D248 /* MHSortImportsAlphabeticallyOperationSpec.m */,
+				969A558D18DDA3C20040EB6C /* MHAddImportOperationSpec.m */,
+			);
+			name = "Operations Tests";
+			sourceTree = "<group>";
+		};
+		96D89DF318A7B0080087D248 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				96B64AC418DE0D8F007DFC26 /* NSFileManager+Headers.h */,
+				96B64AC518DE0D8F007DFC26 /* NSFileManager+Headers.m */,
+				96B64AC618DE0D8F007DFC26 /* NSString+Extensions.h */,
+				96B64AC718DE0D8F007DFC26 /* NSString+Extensions.m */,
+				AD6A1FEB1876B68D00E4137F /* NSMutableIndexSet+NSArray.h */,
+				AD6A1FEC1876B68D00E4137F /* NSMutableIndexSet+NSArray.m */,
+				AD6A1FED1876B68D00E4137F /* NSString+Files.h */,
+				AD6A1FEE1876B68D00E4137F /* NSString+Files.m */,
+				96D864CF18A6343C0065CD9A /* NSView+Dumping.h */,
+				96D864D018A6343C0065CD9A /* NSView+Dumping.m */,
+				9658B95C18A643D700A768B0 /* NSObject+MHLogMethods.h */,
+				9658B95D18A643D700A768B0 /* NSObject+MHLogMethods.m */,
+				9611423F18A6504400E03589 /* NSString+MHNSRange.h */,
+				9611424018A6504400E03589 /* NSString+MHNSRange.m */,
+				96A0953919177ED400338093 /* NSTextView+Operations.h */,
+				96A0953A19177ED400338093 /* NSTextView+Operations.m */,
+				96FDF3E819694EB600170DEB /* NSArray+Operations.h */,
+				96FDF3E919694EB600170DEB /* NSArray+Operations.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		96D89DF418A7B0180087D248 /* Statements */ = {
+			isa = PBXGroup;
+			children = (
+				96589FAC18FDDD6800654F2B /* NSArray+MHStatement.h */,
+				96589FAD18FDDD6800654F2B /* NSArray+MHStatement.m */,
+				96D89DF518A7B03C0087D248 /* MHImportStatement+Sorting.h */,
+				96D89DF618A7B03C0087D248 /* MHImportStatement+Sorting.m */,
+				96C1BF301928BF2E007A4699 /* MHImportStatement+Construction.h */,
+				96C1BF311928BF2E007A4699 /* MHImportStatement+Construction.m */,
+			);
+			name = Statements;
+			sourceTree = "<group>";
+		};
+		96D89DF918A7B91D0087D248 /* Statements Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A20201876B73200E4137F /* MHImportStatementSpec.m */,
+				96580BF7189D258B00466993 /* MHMethodStatementSpec.m */,
+				9683A67A18FAC062009E0232 /* MHMethodArgumentStatementSpec.m */,
+				963282D118F961E80007699A /* MHInterfaceStatementSpec.m */,
+				963282E518F9733A0007699A /* MHPropertyStatementSpec.m */,
+				963282E718F973640007699A /* MHPropertyQualifierStatementSpec.m */,
+				96E3D9BA192BF71D00600588 /* MHStringLiteralStatementSpec.m */,
+				AD6A20241876B73200E4137F /* MHStatementSpec.m */,
+			);
+			name = "Statements Tests";
+			sourceTree = "<group>";
+		};
+		96E3D9B5192BF58D00600588 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				96E3D9B6192BF5AE00600588 /* MHStringLiteralStatement.h */,
+				96E3D9B7192BF5AE00600588 /* MHStringLiteralStatement.m */,
+			);
+			name = Literals;
+			sourceTree = "<group>";
+		};
+		96F29166194470A6008CC5AB /* Bugs */ = {
+			isa = PBXGroup;
+			children = (
+				96067BEF192C80F20095AEFF /* Bug_1.m */,
+				96067BF0192C80F20095AEFF /* Bug_2.m */,
+				96F2916519447098008CC5AB /* Bug_3.m */,
+			);
+			name = Bugs;
+			sourceTree = "<group>";
+		};
+		96FC2B36191B596E000CA4EB /* XcodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				96FC2B37191B596E000CA4EB /* Categories */,
+				96FC2B3A191B596E000CA4EB /* XCWorkspace.h */,
+				96FC2B3B191B596E000CA4EB /* XCWorkspace.m */,
+				961C7DCC191F6ED200031FAD /* XCBuildSettings.h */,
+				961C7DCD191F6ED200031FAD /* XCBuildSettings.m */,
+			);
+			path = XcodeEditor;
+			sourceTree = "<group>";
+		};
+		96FC2B37191B596E000CA4EB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				96FC2B38191B596E000CA4EB /* NSString+XCAdditions.h */,
+				96FC2B39191B596E000CA4EB /* NSString+XCAdditions.m */,
+				961C7DD0191F6F9000031FAD /* XCTarget+XCProject.h */,
+				961C7DD1191F6F9000031FAD /* XCTarget+XCProject.m */,
+				9691A4B31947B0C3005407A1 /* XCProject+Extensions.h */,
+				9691A4B41947B0C3005407A1 /* XCProject+Extensions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		96FDF3DF19694C1000170DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9661D52019694B0600A9930E /* MHSourceFile.h */,
+				96FDF3DB19694C0100170DEB /* MHConcreteSourceFile.h */,
+				96FDF3DC19694C0100170DEB /* MHConcreteSourceFile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD6A1FB21876B5BD00E4137F = {
+			isa = PBXGroup;
+			children = (
+				9664484B1956F1AF0040EC56 /* LICENSE */,
+				AD6A1FC51876B5BD00E4137F /* MHImportBuster */,
+				AD6A1FDA1876B5BD00E4137F /* MHImportBusterTests */,
+				ADB1CF811876C0B000D935C7 /* MHImportBusterPlugin */,
+				96872B0A19163A6D0068AF7A /* MHImportBusterApp */,
+				AD6A1FBE1876B5BD00E4137F /* Frameworks */,
+				AD6A1FBD1876B5BD00E4137F /* Products */,
+				1E2BEC1AB81B8B16F2B9D786 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AD6A1FBD1876B5BD00E4137F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */,
+				AD6A1FD31876B5BD00E4137F /* MHImportBusterTests.xctest */,
+				ADB1CF7C1876C0B000D935C7 /* Peckham.xcplugin */,
+				96872B0819163A6D0068AF7A /* MHImportBusterApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD6A1FBE1876B5BD00E4137F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96A095321917673E00338093 /* Accounts.framework */,
+				964CEC5C191663360012C63D /* IDEFoundation.framework */,
+				964CEC5D191663360012C63D /* IDEKit.framework */,
+				964CEC5E191663360012C63D /* DVTFoundation.framework */,
+				964CEC5F191663360012C63D /* DVTKit.framework */,
+				9679BC62191650EF0004AB6B /* QuartzCore.framework */,
+				AD3D6CED187736C000DF605A /* Carbon.framework */,
+				AD6A1FBF1876B5BD00E4137F /* Cocoa.framework */,
+				AD6A1FD41876B5BD00E4137F /* XCTest.framework */,
+				ADB1CF7D1876C0B000D935C7 /* AppKit.framework */,
+				ADB1CF7F1876C0B000D935C7 /* Foundation.framework */,
+				AD6A1FC11876B5BD00E4137F /* Other Frameworks */,
+				1E6C46054B3049289C35CE1F /* libPods.a */,
+				50CE69C5567A407486A7155C /* libPods-MHImportBusterTests.a */,
+				CC86188A4B074F55AA6C93E6 /* libPods-MHImportBuster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD6A1FC11876B5BD00E4137F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A1FC21876B5BD00E4137F /* Foundation.framework */,
+				AD6A1FC31876B5BD00E4137F /* CoreData.framework */,
+				AD6A1FC41876B5BD00E4137F /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AD6A1FC51876B5BD00E4137F /* MHImportBuster */ = {
+			isa = PBXGroup;
+			children = (
+				964B0A9018A79AD000E36C8E /* External */,
+				AD6A1FEA1876B68D00E4137F /* Categories */,
+				AD6A1FEF1876B68D00E4137F /* Classes */,
+				AD6A20011876B68D00E4137F /* MHBlocks.h */,
+				AD6A20021876B68D00E4137F /* MHImportBusterErrors.h */,
+				AD6A1FCC1876B5BD00E4137F /* MHImportBuster.h */,
+				AD6A1FC61876B5BD00E4137F /* Supporting Files */,
+			);
+			path = MHImportBuster;
+			sourceTree = "<group>";
+		};
+		AD6A1FC61876B5BD00E4137F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A1FC71876B5BD00E4137F /* MHImportBuster-Info.plist */,
+				AD6A1FC81876B5BD00E4137F /* InfoPlist.strings */,
+				AD6A1FCB1876B5BD00E4137F /* MHImportBuster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD6A1FDA1876B5BD00E4137F /* MHImportBusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				96067BEE192C80F20095AEFF /* TestFiles */,
+				AD6A1FDB1876B5BD00E4137F /* Supporting Files */,
+				96D89DF918A7B91D0087D248 /* Statements Tests */,
+				96D89DE718A7A4570087D248 /* Operations Tests */,
+				9611424318A6509800E03589 /* Category Tests */,
+				9649770319711E28006EF60A /* Controllers Tests */,
+				9628390A18A63D08007EE520 /* DVT */,
+				964561D21895778700026306 /* Helper */,
+				AD6A20231876B73200E4137F /* MHStatementParserSpec.m */,
+				AD6A201B1876B73200E4137F /* MHFileSpec.m */,
+				964561C7189554E100026306 /* MHDocumentObserverSpec.m */,
+				964561D01895777A00026306 /* MHDocumentLOCObserverSpec.m */,
+				9612CD4718DDA065003CF9E0 /* MHXcodeIssuesParserSpec.m */,
+				96B64AC218DE099B007DFC26 /* MHHeaderCacheSpec.m */,
+			);
+			path = MHImportBusterTests;
+			sourceTree = "<group>";
+		};
+		AD6A1FDB1876B5BD00E4137F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A201E1876B73200E4137F /* MHImportBusterTests-Prefix.pch */,
+				AD6A1FDC1876B5BD00E4137F /* MHImportBusterTests-Info.plist */,
+				AD6A1FDD1876B5BD00E4137F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD6A1FEA1876B68D00E4137F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9661D52119694B8200A9930E /* XcodeEditor */,
+				9683A67518FAB124009E0232 /* PKTokenizer */,
+				963282D718F964970007699A /* PKToken */,
+				96D89DF418A7B0180087D248 /* Statements */,
+				96D89DF318A7B0080087D248 /* Foundation */,
+				9628390918A63BBA007EE520 /* DVT */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AD6A1FEF1876B68D00E4137F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				964B0A9218A79AD000E36C8E /* MHXcodeDocumentNavigator.h */,
+				964B0A9318A79AD000E36C8E /* MHXcodeDocumentNavigator.m */,
+				96FDF3DF19694C1000170DEB /* Model */,
+				96A0953419177B3200338093 /* Controller */,
+				96B22FA319167CC8001E643C /* Views */,
+				9618D21518DB72670049EE62 /* Issues */,
+				96542C6918A798B900246A79 /* Operations */,
+				96580BF6189D198200466993 /* Statements */,
+				964561C91895587200026306 /* Document Observers */,
+				AD6A1FF01876B68D00E4137F /* MHFile.h */,
+				AD6A1FF11876B68D00E4137F /* MHFile.m */,
+				AD6A1FFE1876B68D00E4137F /* MHStatementParser.h */,
+				AD6A1FFF1876B68D00E4137F /* MHStatementParser.m */,
+				96B64ABE18DE01F4007DFC26 /* MHHeaderCache.h */,
+				96B64ABF18DE01F4007DFC26 /* MHHeaderCache.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ADB1CF811876C0B000D935C7 /* MHImportBusterPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1CF871876C0B000D935C7 /* MHImportBusterPlugin.h */,
+				ADB1CF881876C0B000D935C7 /* MHImportBusterPlugin.m */,
+				ADB1CF821876C0B000D935C7 /* Supporting Files */,
+			);
+			path = MHImportBusterPlugin;
+			sourceTree = "<group>";
+		};
+		ADB1CF821876C0B000D935C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADB1CF831876C0B000D935C7 /* MHImportBusterPlugin-Info.plist */,
+				ADB1CF841876C0B000D935C7 /* InfoPlist.strings */,
+				ADB1CF8A1876C0B000D935C7 /* MHImportBusterPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD6A1FB91876B5BD00E4137F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E3D9B8192BF5AE00600588 /* MHStringLiteralStatement.h in Headers */,
+				96B64ACA18DE0D8F007DFC26 /* NSString+Extensions.h in Headers */,
+				96A0953719177B5D00338093 /* MHImportListViewController.h in Headers */,
+				9611424118A6504400E03589 /* NSString+MHNSRange.h in Headers */,
+				9683A66E18FAA402009E0232 /* MHMethodArgumentStatement.h in Headers */,
+				AD5427CA1876C37E00A2BC8E /* MHImportBuster.h in Headers */,
+				96B64AC818DE0D8F007DFC26 /* NSFileManager+Headers.h in Headers */,
+				96FDF3DD19694C0100170DEB /* MHConcreteSourceFile.h in Headers */,
+				96D89DFE18A7BE580087D248 /* PKToken+Factory.h in Headers */,
+				96A0953B19177ED400338093 /* NSTextView+Operations.h in Headers */,
+				964B0A9718A79AD000E36C8E /* XCFXcodePrivate.h in Headers */,
+				96C21B84189CE00A00484D57 /* MHMethodStatement.h in Headers */,
+				96FB646A18A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.h in Headers */,
+				AD6A20151876B68D00E4137F /* MHStatementParser.h in Headers */,
+				AD6A20171876B68D00E4137F /* MHStatements.h in Headers */,
+				961C7DCE191F6ED200031FAD /* XCBuildSettings.h in Headers */,
+				96EA84C51916ACDD00CBEFE4 /* MHTableView.h in Headers */,
+				AD6A20191876B68D00E4137F /* MHImportBusterErrors.h in Headers */,
+				AD6A20181876B68D00E4137F /* MHBlocks.h in Headers */,
+				AD6A20051876B68D00E4137F /* NSString+Files.h in Headers */,
+				9683A67318FAAF5E009E0232 /* MHMethodReturnStatement.h in Headers */,
+				96D89DEF18A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.h in Headers */,
+				963282CF18F933C50007699A /* MHInterfaceStatement.h in Headers */,
+				96FDF3EA19694EB600170DEB /* NSArray+Operations.h in Headers */,
+				96FC2B3C191B596E000CA4EB /* NSString+XCAdditions.h in Headers */,
+				968AD40E18986746009E6FE6 /* MHDocumentMethodLOCObserver.h in Headers */,
+				9628390718A63A11007EE520 /* DVTSourceTextStorage+Operations.h in Headers */,
+				AD6A20071876B68D00E4137F /* MHFile.h in Headers */,
+				964B3F87194910A300B079BD /* MHSearchArrayOperation.h in Headers */,
+				964B0A9518A79AD000E36C8E /* MHXcodeDocumentNavigator.h in Headers */,
+				96FC2B3E191B596E000CA4EB /* XCWorkspace.h in Headers */,
+				964B0A9A18A79B8300E36C8E /* MHConcreteSourceOperation.h in Headers */,
+				9658B95E18A643D700A768B0 /* NSObject+MHLogMethods.h in Headers */,
+				969A558B18DDA3890040EB6C /* MHAddImportOperation.h in Headers */,
+				964B3F831949100C00B079BD /* MHOperation.h in Headers */,
+				AD6A20031876B68D00E4137F /* NSMutableIndexSet+NSArray.h in Headers */,
+				AD6A200D1876B68D00E4137F /* MHImportStatement.h in Headers */,
+				96589FAE18FDDD6800654F2B /* NSArray+MHStatement.h in Headers */,
+				96C1BF321928BF2E007A4699 /* MHImportStatement+Construction.h in Headers */,
+				9699F6FB18954F7400AC7432 /* MHDocumentObserver.h in Headers */,
+				963282E018F971090007699A /* MHPropertyQualifierStatement.h in Headers */,
+				AD6A20131876B68D00E4137F /* MHStatement.h in Headers */,
+				964561CC1895750000026306 /* MHDocumentLOCObserver.h in Headers */,
+				963282DC18F96E9B0007699A /* MHPropertyStatement.h in Headers */,
+				96D864D118A6343C0065CD9A /* NSView+Dumping.h in Headers */,
+				9618D21918DB72970049EE62 /* MHXcodeIssuesParser.h in Headers */,
+				9683A67818FAB17A009E0232 /* PKTokenizer+Factory.h in Headers */,
+				963282D518F964930007699A /* PKToken+Equality.h in Headers */,
+				9691A4B51947B0C3005407A1 /* XCProject+Extensions.h in Headers */,
+				96B22FA719167CC8001E643C /* MHImportListView.h in Headers */,
+				9649770119711794006EF60A /* MHSourceFileSearchController.h in Headers */,
+				96D89DF718A7B03C0087D248 /* MHImportStatement+Sorting.h in Headers */,
+				96B64AC018DE01F4007DFC26 /* MHHeaderCache.h in Headers */,
+				9629DE721969399500BD3CA1 /* XCSourceFile+MHSourceFile.h in Headers */,
+				961C7DD2191F6F9000031FAD /* XCTarget+XCProject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		96872B0719163A6D0068AF7A /* MHImportBusterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96872B3319163A6E0068AF7A /* Build configuration list for PBXNativeTarget "MHImportBusterApp" */;
+			buildPhases = (
+				96872B0419163A6D0068AF7A /* Sources */,
+				96872B0519163A6D0068AF7A /* Frameworks */,
+				96872B0619163A6D0068AF7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHImportBusterApp;
+			productName = MHImportBusterApp;
+			productReference = 96872B0819163A6D0068AF7A /* MHImportBusterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD6A1FBB1876B5BD00E4137F /* MHImportBuster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6A1FE41876B5BD00E4137F /* Build configuration list for PBXNativeTarget "MHImportBuster" */;
+			buildPhases = (
+				91F8557A81DF432F8CB0BB89 /* Check Pods Manifest.lock */,
+				AD6A1FB71876B5BD00E4137F /* Sources */,
+				AD6A1FB81876B5BD00E4137F /* Frameworks */,
+				AD6A1FB91876B5BD00E4137F /* Headers */,
+				AD6A1FBA1876B5BD00E4137F /* Resources */,
+				BB779327726B4FA4B9A1508E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHImportBuster;
+			productName = MHImportBuster;
+			productReference = AD6A1FBC1876B5BD00E4137F /* MHImportBuster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD6A1FD21876B5BD00E4137F /* MHImportBusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6A1FE71876B5BD00E4137F /* Build configuration list for PBXNativeTarget "MHImportBusterTests" */;
+			buildPhases = (
+				686549F6AF7E4E0EA8AE4381 /* Check Pods Manifest.lock */,
+				AD6A1FCF1876B5BD00E4137F /* Sources */,
+				AD6A1FD01876B5BD00E4137F /* Frameworks */,
+				AD6A1FD11876B5BD00E4137F /* Resources */,
+				8D10B0C463784E8491566C69 /* Copy Pods Resources */,
+				AD6A20311876BB1F00E4137F /* Copy Test Files to Bundle */,
+				8F272B1DA6D3E1B587D5CC16 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6A1FD81876B5BD00E4137F /* PBXTargetDependency */,
+				59B330831B6D2BCE00135030 /* PBXTargetDependency */,
+			);
+			name = MHImportBusterTests;
+			productName = MHImportBusterTests;
+			productReference = AD6A1FD31876B5BD00E4137F /* MHImportBusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADB1CF7B1876C0AF00D935C7 /* Peckham */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB1CF8D1876C0B000D935C7 /* Build configuration list for PBXNativeTarget "Peckham" */;
+			buildPhases = (
+				ADB1CF781876C0AF00D935C7 /* Sources */,
+				ADB1CF791876C0AF00D935C7 /* Frameworks */,
+				ADB1CF7A1876C0AF00D935C7 /* Resources */,
+				9623786E1895372A0012DEF1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599EC6581C00FD430047B022 /* PBXTargetDependency */,
+			);
+			name = Peckham;
+			productName = MHImportBusterPlugin;
+			productReference = ADB1CF7C1876C0B000D935C7 /* Peckham.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD6A1FB31876B5BD00E4137F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Marko Hlebar";
+				TargetAttributes = {
+					AD6A1FD21876B5BD00E4137F = {
+						TestTargetID = 96872B0719163A6D0068AF7A;
+					};
+				};
+			};
+			buildConfigurationList = AD6A1FB61876B5BD00E4137F /* Build configuration list for PBXProject "MHImportBuster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				af,
+				am,
+				ar,
+				be,
+				bg,
+				ca,
+				cs,
+				da,
+				de,
+				de_AT,
+				de_CH,
+				el,
+				en_GB,
+				en_IE,
+				en_IN,
+				en_SG,
+				en_ZA,
+				es,
+				es_419,
+				es_AR,
+				es_BO,
+				es_CL,
+				es_CO,
+				es_CR,
+				es_DO,
+				es_EC,
+				es_GT,
+				es_HN,
+				es_MX,
+				es_NI,
+				es_PA,
+				es_PE,
+				es_PR,
+				es_PY,
+				es_SV,
+				es_US,
+				es_UY,
+				es_VE,
+				et,
+				fa,
+				fi,
+				fil,
+				fr,
+				fr_CH,
+				gsw,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				in,
+				it,
+				iw,
+				ja,
+				ko,
+				ln,
+				lt,
+				lv,
+				mo,
+				ms,
+				nb,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_BR,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sl,
+				sr,
+				sv,
+				sw,
+				th,
+				tl,
+				tr,
+				uk,
+				vi,
+				zh,
+				zh_CN,
+				zh_HK,
+				zh_TW,
+				zu,
+			);
+			mainGroup = AD6A1FB21876B5BD00E4137F;
+			productRefGroup = AD6A1FBD1876B5BD00E4137F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD6A1FBB1876B5BD00E4137F /* MHImportBuster */,
+				AD6A1FD21876B5BD00E4137F /* MHImportBusterTests */,
+				ADB1CF7B1876C0AF00D935C7 /* Peckham */,
+				96872B0719163A6D0068AF7A /* MHImportBusterApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96872B0619163A6D0068AF7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96872B0F19163A6D0068AF7A /* InfoPlist.strings in Resources */,
+				96EA84C11916A79200CBEFE4 /* MHImportListView.xib in Resources */,
+				96872B1D19163A6E0068AF7A /* Images.xcassets in Resources */,
+				96872B1519163A6D0068AF7A /* Credits.rtf in Resources */,
+				96872B1B19163A6E0068AF7A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FBA1876B5BD00E4137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B22FA919167CC8001E643C /* MHImportListView.xib in Resources */,
+				AD6A1FCA1876B5BD00E4137F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FD11876B5BD00E4137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6A1FDF1876B5BD00E4137F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB1CF7A1876C0AF00D935C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB1CF861876C0B000D935C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		686549F6AF7E4E0EA8AE4381 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D10B0C463784E8491566C69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHImportBusterTests/Pods-MHImportBusterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F272B1DA6D3E1B587D5CC16 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHImportBusterTests/Pods-MHImportBusterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F8557A81DF432F8CB0BB89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6A20311876BB1F00E4137F /* Copy Test Files to Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Test Files to Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -a ${SOURCE_ROOT}/MHImportBusterTests/TestFiles/ ${TARGET_BUILD_DIR}/${PRODUCT_NAME}.xctest/Contents/Resources/";
+		};
+		BB779327726B4FA4B9A1508E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHImportBuster/Pods-MHImportBuster-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96872B0419163A6D0068AF7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96872B1119163A6D0068AF7A /* main.m in Sources */,
+				96872B1819163A6D0068AF7A /* MHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FB71876B5BD00E4137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963282D018F933C50007699A /* MHInterfaceStatement.m in Sources */,
+				96FDF3EB19694EB600170DEB /* NSArray+Operations.m in Sources */,
+				964B0A9B18A79B8300E36C8E /* MHConcreteSourceOperation.m in Sources */,
+				96C1BF331928BF2E007A4699 /* MHImportStatement+Construction.m in Sources */,
+				9683A66F18FAA402009E0232 /* MHMethodArgumentStatement.m in Sources */,
+				96589FAF18FDDD6800654F2B /* NSArray+MHStatement.m in Sources */,
+				96D864D218A6343C0065CD9A /* NSView+Dumping.m in Sources */,
+				AD6A20141876B68D00E4137F /* MHStatement.m in Sources */,
+				96EA84C61916ACDD00CBEFE4 /* MHTableView.m in Sources */,
+				9628390818A63A11007EE520 /* DVTSourceTextStorage+Operations.m in Sources */,
+				961C7DCF191F6ED200031FAD /* XCBuildSettings.m in Sources */,
+				9618D21A18DB72970049EE62 /* MHXcodeIssuesParser.m in Sources */,
+				96B64AC918DE0D8F007DFC26 /* NSFileManager+Headers.m in Sources */,
+				96D89DF018A7AD720087D248 /* MHSortImportsAlphabeticallyOperation.m in Sources */,
+				9691A4B61947B0C3005407A1 /* XCProject+Extensions.m in Sources */,
+				9683A67918FAB17A009E0232 /* PKTokenizer+Factory.m in Sources */,
+				964561CD1895750000026306 /* MHDocumentLOCObserver.m in Sources */,
+				9611424218A6504400E03589 /* NSString+MHNSRange.m in Sources */,
+				963282E118F971090007699A /* MHPropertyQualifierStatement.m in Sources */,
+				96D89DFF18A7BE580087D248 /* PKToken+Factory.m in Sources */,
+				9629DE731969399500BD3CA1 /* XCSourceFile+MHSourceFile.m in Sources */,
+				96FC2B3D191B596E000CA4EB /* NSString+XCAdditions.m in Sources */,
+				96FC2B3F191B596E000CA4EB /* XCWorkspace.m in Sources */,
+				969A558C18DDA3890040EB6C /* MHAddImportOperation.m in Sources */,
+				96B22FA819167CC8001E643C /* MHImportListView.m in Sources */,
+				96A0953819177B5D00338093 /* MHImportListViewController.m in Sources */,
+				96E3D9B9192BF5AE00600588 /* MHStringLiteralStatement.m in Sources */,
+				96FDF3DE19694C0100170DEB /* MHConcreteSourceFile.m in Sources */,
+				96D89DF818A7B03C0087D248 /* MHImportStatement+Sorting.m in Sources */,
+				96A0953C19177ED400338093 /* NSTextView+Operations.m in Sources */,
+				9658B95F18A643D700A768B0 /* NSObject+MHLogMethods.m in Sources */,
+				AD6A20161876B68D00E4137F /* MHStatementParser.m in Sources */,
+				AD6A200E1876B68D00E4137F /* MHImportStatement.m in Sources */,
+				964B3F88194910A300B079BD /* MHSearchArrayOperation.m in Sources */,
+				961C7DD3191F6F9000031FAD /* XCTarget+XCProject.m in Sources */,
+				9649770219711794006EF60A /* MHSourceFileSearchController.m in Sources */,
+				964B3F841949100C00B079BD /* MHOperation.m in Sources */,
+				96B64ACB18DE0D8F007DFC26 /* NSString+Extensions.m in Sources */,
+				9699F6FC18954F7400AC7432 /* MHDocumentObserver.m in Sources */,
+				9683A67418FAAF5E009E0232 /* MHMethodReturnStatement.m in Sources */,
+				AD6A20081876B68D00E4137F /* MHFile.m in Sources */,
+				AD6A20061876B68D00E4137F /* NSString+Files.m in Sources */,
+				963282D618F964930007699A /* PKToken+Equality.m in Sources */,
+				96FB646B18A7A11600A8BDFE /* MHRemoveDuplicateImportsOperation.m in Sources */,
+				968AD40F18986746009E6FE6 /* MHDocumentMethodLOCObserver.m in Sources */,
+				96C21B85189CE00A00484D57 /* MHMethodStatement.m in Sources */,
+				96B64AC118DE01F4007DFC26 /* MHHeaderCache.m in Sources */,
+				AD6A20041876B68D00E4137F /* NSMutableIndexSet+NSArray.m in Sources */,
+				964B0A9618A79AD000E36C8E /* MHXcodeDocumentNavigator.m in Sources */,
+				963282DD18F96E9B0007699A /* MHPropertyStatement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6A1FCF1876B5BD00E4137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6A202D1876B73200E4137F /* MHStatementParserSpec.m in Sources */,
+				9612CD4818DDA065003CF9E0 /* MHXcodeIssuesParserSpec.m in Sources */,
+				9649770519711E53006EF60A /* MHSourceFileSearchControllerSpec.m in Sources */,
+				96E3D9BB192BF71D00600588 /* MHStringLiteralStatementSpec.m in Sources */,
+				AD6A202A1876B73200E4137F /* MHImportStatementSpec.m in Sources */,
+				9683A67B18FAC062009E0232 /* MHMethodArgumentStatementSpec.m in Sources */,
+				96D89DE918A7A4980087D248 /* MHRemoveDuplicateImportsOperationSpec.m in Sources */,
+				96C1BF351928BF56007A4699 /* MHImportStatement+ConstructionSpec.m in Sources */,
+				AD6A202E1876B73200E4137F /* MHStatementSpec.m in Sources */,
+				AD6A20271876B73200E4137F /* MHFileSpec.m in Sources */,
+				9611424518A650C100E03589 /* NSString_MHNSRangeSpec.m in Sources */,
+				964561D11895777A00026306 /* MHDocumentLOCObserverSpec.m in Sources */,
+				963282E618F9733A0007699A /* MHPropertyStatementSpec.m in Sources */,
+				96B64AC318DE099B007DFC26 /* MHHeaderCacheSpec.m in Sources */,
+				969A558E18DDA3C20040EB6C /* MHAddImportOperationSpec.m in Sources */,
+				964561C8189554E100026306 /* MHDocumentObserverSpec.m in Sources */,
+				963282D218F961E80007699A /* MHInterfaceStatementSpec.m in Sources */,
+				96580BF8189D258B00466993 /* MHMethodStatementSpec.m in Sources */,
+				96D89DF218A7AD8F0087D248 /* MHSortImportsAlphabeticallyOperationSpec.m in Sources */,
+				963282D918F966E30007699A /* PKToken+EqualitySpec.m in Sources */,
+				96D89DFB18A7B9470087D248 /* MHImportStatement_SortingSpec.m in Sources */,
+				964B0A9D18A79C7200E36C8E /* MHConcreteSourceOperationSpec.m in Sources */,
+				AD6A202F1876B8AE00E4137F /* NSString+Files.m in Sources */,
+				96D89E0118A7BEC20087D248 /* PKToken_FactorySpec.m in Sources */,
+				963282E818F973640007699A /* MHPropertyQualifierStatementSpec.m in Sources */,
+				9628390C18A63D35007EE520 /* DVTSourceTextStorageSpec.m in Sources */,
+				59323EC21C9ED2DB009F5FDA /* NSStringFilesSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB1CF781876C0AF00D935C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB1CF891876C0B000D935C7 /* MHImportBusterPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		599EC6581C00FD430047B022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6A1FBB1876B5BD00E4137F /* MHImportBuster */;
+			targetProxy = 599EC6571C00FD430047B022 /* PBXContainerItemProxy */;
+		};
+		59B330831B6D2BCE00135030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96872B0719163A6D0068AF7A /* MHImportBusterApp */;
+			targetProxy = 59B330821B6D2BCE00135030 /* PBXContainerItemProxy */;
+		};
+		AD6A1FD81876B5BD00E4137F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6A1FBB1876B5BD00E4137F /* MHImportBuster */;
+			targetProxy = AD6A1FD71876B5BD00E4137F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96872B0D19163A6D0068AF7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96872B0E19163A6D0068AF7A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96872B1319163A6D0068AF7A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96872B1419163A6D0068AF7A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		96872B1919163A6E0068AF7A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96872B1A19163A6E0068AF7A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AD6A1FC81876B5BD00E4137F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6A1FC91876B5BD00E4137F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD6A1FDD1876B5BD00E4137F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6A1FDE1876B5BD00E4137F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADB1CF841876C0B000D935C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADB1CF851876C0B000D935C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96872B2F19163A6E0068AF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBusterApp/MHImportBusterApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/include",
+					"$(SRCROOT)/MHImportBuster/Classes/Views/",
+				);
+				INFOPLIST_FILE = "MHImportBusterApp/MHImportBusterApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96872B3019163A6E0068AF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBusterApp/MHImportBusterApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/include",
+					"$(SRCROOT)/MHImportBuster/Classes/Views/",
+				);
+				INFOPLIST_FILE = "MHImportBusterApp/MHImportBusterApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD6A1FE21876B5BD00E4137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AD6A1FE31876B5BD00E4137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD6A1FE51876B5BD00E4137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C3352BDD35D0A6C792BE45 /* Pods-MHImportBuster.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MHImportBuster/External",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../SharedFrameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBuster/MHImportBuster-Prefix.pch";
+				INFOPLIST_FILE = "MHImportBuster/MHImportBuster-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		AD6A1FE61876B5BD00E4137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19CF76BE066C808B18BD0F7 /* Pods-MHImportBuster.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MHImportBuster/External",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../SharedFrameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBuster/MHImportBuster-Prefix.pch";
+				INFOPLIST_FILE = "MHImportBuster/MHImportBuster-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		AD6A1FE81876B5BD00E4137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD4AC6DD582B92C92C5774C /* Pods-MHImportBusterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBuster/MHImportBuster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "MHImportBusterTests/MHImportBusterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHImportBusterApp.app/Contents/MacOS/MHImportBusterApp";
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD6A1FE91876B5BD00E4137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81BCBA1C1D69FAA484D1A98A /* Pods-MHImportBusterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBuster/MHImportBuster-Prefix.pch";
+				INFOPLIST_FILE = "MHImportBusterTests/MHImportBusterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHImportBusterApp.app/Contents/MacOS/MHImportBusterApp";
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		ADB1CF8B1876C0B000D935C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../Frameworks",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../SharedFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBusterPlugin/MHImportBusterPlugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MHImportBusterPlugin/MHImportBusterPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		ADB1CF8C1876C0B000D935C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../Frameworks",
+					"$(PLATFORM_DEVELOPER_LIBRARY_DIR)/../../SharedFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHImportBusterPlugin/MHImportBusterPlugin-Prefix.pch";
+				INFOPLIST_FILE = "MHImportBusterPlugin/MHImportBusterPlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markohlebar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96872B3319163A6E0068AF7A /* Build configuration list for PBXNativeTarget "MHImportBusterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96872B2F19163A6E0068AF7A /* Debug */,
+				96872B3019163A6E0068AF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6A1FB61876B5BD00E4137F /* Build configuration list for PBXProject "MHImportBuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6A1FE21876B5BD00E4137F /* Debug */,
+				AD6A1FE31876B5BD00E4137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6A1FE41876B5BD00E4137F /* Build configuration list for PBXNativeTarget "MHImportBuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6A1FE51876B5BD00E4137F /* Debug */,
+				AD6A1FE61876B5BD00E4137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6A1FE71876B5BD00E4137F /* Build configuration list for PBXNativeTarget "MHImportBusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6A1FE81876B5BD00E4137F /* Debug */,
+				AD6A1FE91876B5BD00E4137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB1CF8D1876C0B000D935C7 /* Build configuration list for PBXNativeTarget "Peckham" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB1CF8B1876C0B000D935C7 /* Debug */,
+				ADB1CF8C1876C0B000D935C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD6A1FB31876B5BD00E4137F /* Project object */;
+}

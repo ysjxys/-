@@ -1,0 +1,157 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9666E4D5196BCB2B0076C1F2 /* Peckham */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9666E4D8196BCB2B0076C1F2 /* Build configuration list for PBXAggregateTarget "Peckham" */;
+			buildPhases = (
+				9666E4D9196BCB4E0076C1F2 /* Build Peckham */,
+				596095E51C00CE7F00647E39 /* Remove code coverage files (.gcno) */,
+				596095E61C00D0FE00647E39 /* Remove code coverage files (.gcda) */,
+			);
+			dependencies = (
+			);
+			name = Peckham;
+			productName = Peckham;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXGroup section */
+		9666E4CE196BCAB40076C1F2 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		9666E4CF196BCAB40076C1F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = 9666E4D2196BCAB40076C1F2 /* Build configuration list for PBXProject "Peckham" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9666E4CE196BCAB40076C1F2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9666E4D5196BCB2B0076C1F2 /* Peckham */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		596095E51C00CE7F00647E39 /* Remove code coverage files (.gcno) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove code coverage files (.gcno)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find . -type f -depth 1 -name '*.gcno' -delete";
+		};
+		596095E61C00D0FE00647E39 /* Remove code coverage files (.gcda) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove code coverage files (.gcda)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find . -type f -depth 1 -name '*.gcda' -delete";
+		};
+		9666E4D9196BCB4E0076C1F2 /* Build Peckham */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Peckham";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -workspace MHImportBuster.xcworkspace -scheme Peckham";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9666E4D3196BCAB40076C1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		9666E4D4196BCAB40076C1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+			};
+			name = Release;
+		};
+		9666E4D6196BCB2B0076C1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9666E4D7196BCB2B0076C1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9666E4D2196BCAB40076C1F2 /* Build configuration list for PBXProject "Peckham" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9666E4D3196BCAB40076C1F2 /* Debug */,
+				9666E4D4196BCAB40076C1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9666E4D8196BCB2B0076C1F2 /* Build configuration list for PBXAggregateTarget "Peckham" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9666E4D6196BCB2B0076C1F2 /* Debug */,
+				9666E4D7196BCB2B0076C1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9666E4CF196BCAB40076C1F2 /* Project object */;
+}
